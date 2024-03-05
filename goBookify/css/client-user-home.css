@@ -1,0 +1,157 @@
+.clientNameThemeBanner {
+    border-radius: 15px;
+    padding: 20px 45px 23px;
+    margin-top: 0px;
+}
+.clientUserTitle {
+    color: var(--white_primary);
+    font-family: 'PlusJakartaSans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 151.5%;
+}
+.clientUsersubTitle {
+    color: var(--white_primary);
+    font-family: 'PlusJakartaSans';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 143.5%;
+}
+.clientUserBookList .bkLst {
+    column-gap: 40px;
+}
+.clientUserBookList .bkItm {
+    flex-basis: calc(16.66% - 34px);
+    max-width: calc(16.66% - 34px);
+    /* width: calc(20% - 45px); */
+    width: auto;
+    cursor: pointer;
+}
+.clientUserBookList .expBkImg {
+    /* min-width: 225px; */
+    min-width: 186px;
+}
+.assignMaterialList {
+    margin-top: 34px;
+}
+.clientUserBookList .rdPrgsWrap {
+    column-gap: 15px;
+}
+.expCntRtIn {
+    padding-left: 0px;
+}
+.dummyImage {
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ----VW RESIZE----- */
+@media screen and (max-width: 1700px) {
+    /* .clientNameThemeBanner {
+        border-radius: 15px;
+        padding: 1.176vw 2.647vw 1.941vw;
+        margin-top: 2.059vw;
+    
+    }
+    .clientUserTitle  {
+        font-size: 1.882vw;
+    }
+    .clientUsersubTitle {
+        font-size: 1.471vw;
+    } */
+    .clientUserBookList .bkLst {
+        column-gap: 2.353vw;
+    }
+    .clientUserBookList .bkItm {
+        flex-basis: calc(16.66% - 2vw);
+        max-width: calc(16.66% - 2vw);
+    }
+    .clientUserBookList .expBkImg {
+        min-width: 10.941vw;
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) {
+    .clientUserBookList .expBkImg {
+        min-width: 12.541vw;
+    }
+}
+/* ---media query ------ */
+
+
+@media screen and (max-width:1199px) {
+
+    .clientUserBookList .bkItm {
+        flex-basis: calc(20% - 2vw);
+        max-width: calc(20% - 2vw);
+    }
+    .pgCenter {
+        padding: 0 0px;
+    }
+
+}
+@media screen and (max-width:1024px) {
+    .clientUserBookList .bkItm {
+        flex-basis: calc(25% - 34px);
+        max-width: calc(25% - 34px);
+    }
+    .clientUserBookList .bkLst {
+		column-gap: 40px;
+	}
+}
+@media screen and (max-width:768px) {
+    .clientNameThemeBanner {
+		padding: 22px 28px 28px 21px;
+        margin-top: 0px;
+	}
+    .clientUserTitle {
+        font-size: 22px;
+    }
+    .clientUsersubTitle {
+        font-size: 16px;
+    }
+
+    .clientUserBookList .bkItm {
+            flex-basis: calc(33.33% - 34px);
+            max-width: calc(33.33% - 34px);
+    }
+    .clientUserBookList .expBkImg {
+        min-width: 183px;
+    }
+    .expCntRtIn {
+        padding-left: 0px;
+    }
+    .bookLsAllBtn {
+        padding: 8px 17px;
+        border-radius: 12px;
+    }
+}
+@media screen and (max-width:490px) {
+    .bookLsAllBtn {
+        padding: 5px 17px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    .clientUserBookList .bkItm {
+        /* flex-basis: calc(50% - 16px); */
+        flex-basis: calc(50% - 34px);
+        max-width: calc(50% - 34px);
+    }
+    
+    .expBkTtle {
+        font-size: 17px;
+    }
+    .bkDesc { 
+        font-size: 14px;
+    }
+   
+}

@@ -1,0 +1,76 @@
+.clientUserFtMenuWrap {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding-top: 15px;
+    /* justify-content: center; */
+}
+.clientUserFt .ftWrap {
+    align-items: flex-end;
+}
+.clientUserFt .ftLt {
+    max-width: 535px;
+}
+.clientUserFt .ftStEmail {
+    margin-top: 0;
+}
+.clientUserFt .ftbtmTxt {
+    text-align: right;
+}
+.clientUserFt .pgFtTop {
+    border-bottom: none;
+}
+
+
+/* Responsive CSS */
+
+@media screen and (max-width:1450px) {
+    .ftRt {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .clientUserFt .ftWrap {
+        align-items: center;
+    }
+    .clientUserFtMenuWrap {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:490px) {
+     /* ---footer---- */
+     .clientUserFt .ftWrap {
+        align-items: flex-start;
+    }
+    .clientUserFt .logoWrap, .clientUserFtMenuWrap {
+        justify-content: flex-start!important;
+    }
+    .ftStEmail {
+        display: none;
+    }
+    .ftLt .logo {
+        margin: unset;
+        justify-content: flex-start;
+    }
+    .clientUserFt .ftLt {
+        max-width: 100%;
+    }
+    .clientUserFt .ftWrap {
+        align-items: flex-start!important;
+    }
+    .ftRt {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .ftbtmTxt {
+        font-size: 13px;
+    }
+    .pgFtTop {
+        padding-bottom: 20px;
+    }
+    .clientUserFtMenuWrap {
+        padding-top: 25px!important;
+    }
+
+}

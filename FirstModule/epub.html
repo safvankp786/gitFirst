@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title>goBookify | EPub</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <!--[if lt IE 10]><script src="js/IEupdate.js" type="text/javascript"></script><![endif]-->
+  <link rel="stylesheet" type="text/css" media="all" href="css/common.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/pdf.css">
+</head>
+
+<body id="body">
+
+
+  <div class="pgPrc pgPrc-v2">
+    <div class="pgCenter">
+      <div class="pdfMainWrap">
+        <div class="pdfHeader">
+          <div class="pdfTopHead">
+            <div class="pdfLogo">
+              <img src="images/img_Lgo_hd.png" alt="Logo"/>
+            </div>
+            <div class="pdfNav">
+              <ul>
+                <li><!--add class active-->
+                  <img src="images/maxIcon.svg" alt="max Icon"/>
+                </li>
+                <li>
+                  <img src="images/bookmarkIcon.svg" alt="BookMark Icon"/>
+                </li>
+                <li class="pdfaddNotes addNotify"><!--add NOTIFICATION using 'addNotify' class-->
+                  <img src="images/PDFaddNotes.svg" alt="Pdf Notes Icon"/>
+                </li>
+                <li class="pdfaddNotes">
+                  <img src="images/highlightIcon.svg" alt="Highlight Icon"/>
+                </li>
+                <li class="pdfnotesList">
+                  <img src="images/notesListIcon.svg" alt="NotesList Icon"/>
+                </li>
+              </ul>
+            </div>
+           
+          </div>
+        </div>
+        <div class="pdfBackBookMrk">
+          <div class="pdfBackwrap">
+            <img src="images/back_icon.svg" alt="Back Icon"/>
+          </div>
+          <div class="pdfBookMrk">
+            <img src="images/bookmarkIcon.svg" alt="BookMark Icon" />
+            <span>Add Bookmark</span>
+          </div>
+          <div class="pdfNavDot">
+            <img src="images/dotIcon.svg" alt="DotIcon">
+          </div>
+        </div>
+        <div class="pdfCnt">
+          <div class="pdfHeadingWrap">
+            <h2 class="pdfMainTtle">Rise of the Red Sun</h2>
+            <h5 class="pdfsmallTtle">By J.K. Rowling</h5>
+            <h4 class="pdfSubTtle">INTRODUCTION</h4>
+          </div>
+          <div class="pdfImage">
+            <img src="images/pdfImage.svg" alt="pdfImage">
+          </div>
+          <div class="pdfDescWrap">
+            <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+            <p> but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with <span>desktop publishing software like Aldus PageMaker </span>including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
+            <div class="pdfInnerActions">
+              <div class="pdfInnerBoxWrap">
+                <button class="pdfInnerBtn pdfaddNoteBtn">Add Note</button>
+                <button class="pdfInnerBtn pdfHighLightBtn" (click)="highlightTextDataTest()">Highlight</button>
+              </div>
+              <!-- -----PDF TEXT HIGHLIGHTS START--- -->
+              <div class="pdfInnerBoxWrap pdfColorPickerWrap"style="display: none;">
+                <div class="pdf-color-container">
+                  <ul>
+                    <li class="pdfTxtColor" style="background: #00dcd6;"></li>
+                    <li class="pdfTxtColor" style="background: #ffcc25;"></li>
+                    <li class="pdfTxtColor" style="background: #ff5833;"></li>
+                    <li class="pdfTxtColor" style="background: #8c6bf8;"></li>
+                    <li class="pdfTxtColor" style="background: #2b65f9;"></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <!-- -----PDF ADD NOTES START--- -->
+              <div class="pdfaddNoteBox" style="display: none;">
+                <form>
+                  <div class="pdfaddNoteBoxIn">
+                    <h5 class="pdfInnerBoxTitle">Add Note</h5>
+                    <div class="pdfaddNoteTextarea">
+                      <textarea placeholder="Type here...."></textarea>
+                    </div>
+                    <div class="pdfsaveBtnWrap">
+                      <button  type="submit" class="pdfsaveBtn">Save</button>
+                    </div>
+                  </div>
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pdfCnt">
+          <div class="pdfSubDesc">Where does it come from?</div>
+          <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+ 
+  <!-- -----Notes List , bookMark, highlights notes Common Layout --------- -->
+    <div class="pdfpopupOverlay" style="display: none;" ></div>
+    <div class="pdfpopupBox" style="display: none;">
+      <div class="pdfpopupBoxIn">
+        <h5 class="pdfInnerBoxTitle">Notes</h5>
+        <div class="pdfInnerContent">
+          <div class="optTop">
+            <div class="optSrchWrap">
+              <div class="optSrchInp">
+                <input type="text" placeholder="Search Note">
+              </div>
+              <div class="optSrchIcon">
+                <img src="./assets/images/ic_Search_bl.svg" alt="icon">
+              </div>
+            </div>
+          </div>
+          <div class="pdfAccordionWrap">
+            <!-- ------singleTab Item--add class 'active' to open accordion------ -->
+            <div class="pdfAccordionItem active">  
+              <div class="pdfAccordionTabWrap">
+                <div class="pdfAccordionTab">
+                  <span class="pdfAccordionChapt">Chapter 4</span>
+                  <div class="pdfAccordionNumIcon">
+                    <div class="pdfAccordionChaptCount">2</div>
+                    <div class="pdfAccordionDropIcon"><img src="./assets/images/selectDwIcon.png"/></div>
+                    
+                  </div>
+                </div>
+                
+                <div class="pdfAccordionTabContent">
+                  <div class="pdfAccordionBox">
+                    <div class="pdfAccordionTxt">
+                      <h5>“when an unknown printer” </h5>
+                      <p>Unknown printer took a galley of type anChapto make a type </p>
+                    </div>
+                    <div class="pdfAccordionFt">
+                      <div class="pdfAccordionDateTime">
+                        <span>10 Jan 2023, 12:20:00</span>
+                      </div>
+                      <div class="pdfAccordionAction">
+                        <a><img src="./assets/images/pdfdelete-icon.svg"/></a>
+                        <a><img src="./assets/images/pdfedit-Icon.svg"/></a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------singleTab Item--------- -->
+            <div class="pdfAccordionItem">  
+              <div class="pdfAccordionTabWrap">
+                <div class="pdfAccordionTab">
+                  <span class="pdfAccordionChapt">Chapter 5</span>
+                  <div class="pdfAccordionNumIcon">
+                    <div class="pdfAccordionChaptCount">3</div>
+                    <div class="pdfAccordionDropIcon"><img src="./assets/images/selectDwIcon.png"/></div>
+                    
+                  </div>
+                </div>
+                
+                <div class="pdfAccordionTabContent">
+                  <div class="pdfAccordionBox">
+                    <div class="pdfAccordionTxt">
+                      <h5>“when an unknown printer” </h5>
+                      <p>Unknown printer took a galley of type anChapto make a type </p>
+                    </div>
+                    <div class="pdfAccordionFt">
+                      <div class="pdfAccordionDateTime">
+                        <span>10 Jan 2023, 12:20:00</span>
+                      </div>
+                      <div class="pdfAccordionAction">
+                        <a><img src="./assets/images/pdfdelete-icon.svg"/></a>
+                        <a><img src="./assets/images/pdfedit-Icon.svg"/></a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------singleTab Item--------- -->
+            <div class="pdfAccordionItem">  
+              <div class="pdfAccordionTabWrap">
+                <div class="pdfAccordionTab">
+                  <span class="pdfAccordionChapt">Chapter 5</span>
+                  <div class="pdfAccordionNumIcon">
+                    <div class="pdfAccordionChaptCount">3</div>
+                    <div class="pdfAccordionDropIcon"><img src="./assets/images/selectDwIcon.png"/></div>
+                    
+                  </div>
+                </div>
+                
+                <div class="pdfAccordionTabContent">
+                  <div class="pdfAccordionBox">
+                    <div class="pdfAccordionTxt">
+                      <h5>“when an unknown printer” </h5>
+                      <p>Unknown printer took a galley of type anChapto make a type </p>
+                    </div>
+                    <div class="pdfAccordionFt">
+                      <div class="pdfAccordionDateTime">
+                        <span>10 Jan 2023, 12:20:00</span>
+                      </div>
+                      <div class="pdfAccordionAction">
+                        <a><img src="./assets/images/pdfdelete-icon.svg"/></a>
+                        <a><img src="./assets/images/pdfedit-Icon.svg"/></a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----Notes List , bookMark, highlights notes Common Layout ----End----- -->
+  
+    <!-- ----Table Contents---------------- -->
+    <div class="pdfpopupOverlay"  style="display: none;"></div>
+    <div class="pdfpopupBox" style="display: none;">
+      <div class="pdfpopupBoxIn">
+        <h5 class="pdfInnerBoxTitle">Table of Contents</h5>
+        <div class="optTop">
+          <div class="optSrchWrap">
+            <div class="optSrchInp">
+              <input type="text" placeholder="Search Note">
+            </div>
+            <div class="optSrchIcon">
+              <img src="./assets/images/ic_Search_bl.svg" alt="icon">
+            </div>
+          </div>
+        </div>
+        <div class="pdfTableContentList">
+          <h5>Title</h5>
+          <ol class="pdfTableContentMainList">
+            <li>
+              <p class="tableContentTxt">Lorem Ipsum</p>
+              <span class="tableContentserialNo">2</span>
+            </li>
+            <li>
+              <p class="tableContentTxt">is simply dummy</p>
+              <span class="tableContentserialNo">2</span>
+            </li>
+            <li>
+              <ol class="pdfTableContentsubList">
+                <li>
+                  <p class="tableContentTxt">text of the printing</p>
+                  <span class="tableContentserialNo">2</span>
+                </li>
+                <li>
+                  <p class="tableContentTxt">and typesetting</p>
+                  <span class="tableContentserialNo">2</span>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <p class="tableContentTxt">is simply dummy</p>
+              <span class="tableContentserialNo">2</span>
+            </li>
+            <li>
+              <p class="tableContentTxt">is simply dummy</p>
+              <span class="tableContentserialNo">2</span>
+            </li>
+            <li>
+              <p class="tableContentTxt">is simply dummy</p>
+              <span class="tableContentserialNo">2</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+<!-- ---------       pdfPopup-Nav    --------------------------- -->
+    <div class="pdfpopupOverlay"  style="display: none;"></div>
+    <div class="pdfpopupBox" style="display:none;">
+      <div class="popupBoxIn pdfpopupBoxIn pdfNavPopupBoxIn">
+        <div class="popupLgClose">
+          <a href=""><img src="images/popLgClose.svg" alt="Close" /></a>
+        </div>
+        <div class="popupScrollWrap">
+          <h5 class="pdfInnerBoxTitle">Rise of the Red Sun</h5>
+          <div class="pdfPopupNavList">
+            <ul>
+              <li >
+                <span class="pdfEnlargeIcon">
+                  <img src="images/maxIcon.svg" alt="Large">
+                </span>
+                <span>Enlarge </span>
+              </li>
+              <li >
+                <span class="pdfTocIcon">
+                  <img src="images/tocPdf.svg" alt="TableContents Icons">
+                </span> 
+                <span>Table of Contents</span>
+              </li>
+              <li >
+                <span class="pdfNotesIcon">
+                  <img src="images/notesPdf.svg" alt="Large">
+                </span>
+                <span>Notes</span>
+              </li>
+              <li >
+                <span class="pdfHighLightIcon">
+                  <img src="images/highLightsPdf.svg" alt="Large">
+                </span>
+                <span>Highlights</span>
+              </li>
+              <li>
+                <span class="pdfBookmarkIcon">
+                  <img src="images/bookmarkPdf.svg" alt="Large">
+                </span>
+                <span> Bookmarks</span>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Script JS -->
+  <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+  <script src="js/customN1.js" type="text/javascript"></script>
+</body>
+
+</html>

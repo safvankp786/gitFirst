@@ -1,0 +1,285 @@
+/* .profileInfoV1 {
+	display: flex;
+	align-items: center;
+}
+
+.profileInfoV1 figure {
+	max-width: 122px;
+	height: 122px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	display: block;
+	flex-grow: 2;
+	width: 25%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.profileInfoV1 strong {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.profileInfoV1 em {
+	display: block;
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.linkV1 {
+	color: #7A83A4;
+	font-family: 'PlusJakartaSans';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	display: table;
+	padding: 0 0 0 25px;
+	position: relative;
+}
+
+.linkV1 img {
+	max-width: 16px;
+	position: absolute;
+	left: 0;
+	top: 6px;
+}
+
+.profileInfoV1 .proCont {
+	padding: 0 0 0 29px;
+}
+
+.profileInfoV1 .proCont strong {
+	padding: 0 16px 0 0;
+}
+
+.controlTable tr:first-child th:first-child {
+	width: 75%;
+}
+
+.table tbody tr:last-child td {
+	border: none;
+}
+
+.controlTable {
+	margin: 45px 0 0 0;
+}
+
+.content-search-wrap { 
+	max-width: inherit;
+	width: 100%;
+}
+
+.content-filter-search {  
+	justify-content: space-between;
+	padding: 0 0 24px 0;
+}
+
+.content-filter-search h3 {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 33px; 
+}
+
+element.style {
+	width: 86%;
+}
+
+.logTable tr td:nth-child(2) {
+	width: 88%;
+} */
+
+
+.doubleSecTable {
+	display: flex;
+	gap: 34px;
+	padding: 67px 0 0 0;
+}
+
+.tableHolder {
+	width: 50%;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border: 1px solid #C3C7D9;
+	padding: 37px 30px 40px 30px;
+}
+
+.tableHolder .table tbody tr:last-child td {
+	border-bottom: 1px dotted #D6D3E7;
+}
+
+.tableHolder .pgnAdmin {
+	padding: 26px 0px 0px 0px;
+}
+
+.tableHolder h3 {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.tableHolder .content-search-wrap {
+	width: auto;
+}
+
+.tableHolder .content-filter-search {
+	padding: 0;
+}
+
+.tableHolder .content-title-search-wrap {
+	padding-bottom: 23px;
+}
+
+.materialHolder {
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border: 1px solid #C3C7D9;
+	padding: 37px 30px 40px 30px;
+	margin: 35px 0 0 0;
+}
+
+.materialHolder h3 {
+	font-family: 'PlusJakartaSans';
+	color: #000B33;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.materialHolder .content-search-wrap {
+	width: auto;
+}
+
+.materialHolder .content-filter-search {
+	padding: 0;
+}
+
+.materialHolder .content-title-search-wrap {
+	padding-bottom: 24px;
+}
+
+.materialHolder .table tbody tr:last-child td {
+	border-bottom: 1px dotted #D6D3E7;
+}
+
+.showCount select {
+	margin: 0 1vw;
+}
+
+.tableWrap {
+	overflow: auto;
+}
+
+@media screen and (max-width: 1870px) {
+	.tableHolder h3 {
+		font-size: 0.856vw;
+	}
+
+	.blue-btn {
+		font-size: 0.856vw;
+	}
+
+	.optSrchInp input {
+		font-size: 0.856vw;
+	}
+
+	.blue-btn {
+		height: 2.353vw;
+	}
+
+	.tableWrap {
+		min-height: auto;
+	}
+
+	.showCount span {
+		font-size: 0.749vw;
+	}
+
+	.showCount select {
+		font-size: 0.749vw;
+	}
+
+	.pgnNum {
+		font-size: 0.749vw;
+	}
+
+	.table td {
+		font-size: 0.802vw;
+	}
+
+	.dashboardTopSec {
+		padding-right: 37px;
+	}
+}
+
+@media screen and (max-width: 1690px) {
+	.tableHolder .pgnAdmin {
+		display: block;
+	}
+
+	.doubleSecTable .pgnWrap {
+		justify-content: unset;
+		padding: 14px 0 0 0;
+	}
+
+	.tableHolder h3 {
+		font-size: 16px;
+	}
+
+	.optSrchInp input {
+		font-size: 16px;
+	}
+
+	.blue-btn {
+		height: 44px;
+		font-size: 16px;
+	}
+
+	.tableHolder h3 {
+		font-size: 16px;
+		padding-bottom: 12px;
+	}
+
+	.showCount span {
+		font-size: 14px;
+	}
+
+	.pgnNum {
+		font-size: 14px;
+	}
+
+	.table td {
+		font-size: 13px;
+	}
+
+	.showCount select {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.doubleSecTable {
+		display: block;
+	}
+
+	.tableHolder {
+		margin: 0 0 40px 0;
+		width: auto;
+	}
+}

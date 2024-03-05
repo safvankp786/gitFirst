@@ -1,0 +1,627 @@
+.pdfTopHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pdfLogo {
+    max-width: 240px;
+    width: 100%;
+  }
+  .pdfLogo img {
+    max-width: 240px;
+    flex-shrink: 0;
+  }
+  .pdfNav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  .pdfNav ul li {
+    list-style: none;
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #1C3E77;
+    background: #FFF;
+    /* padding: 0 9px; */
+    align-items: center;
+  }
+  .pdfNav ul li.active {
+    border: 2px solid #1C3E77;
+    background: #1C3E77;
+  }
+  .pdfNav ul li.active img {
+    filter: brightness(0) invert(1);
+  }
+  .pdfNav ul li img {
+    width: 17px;
+    height: 17px;
+  }
+  .pdfaddNotes img  {
+    width: 25px!important;
+    height: 25px!important;
+    flex-shrink: 0;
+  }
+  .pdfnotesList img {
+    width: 24px!important;
+    height: 24px!important;
+  }
+  .addNotify {
+    position: relative;
+  }
+  .addNotify::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 30px;
+  }
+  .pdfBackBookMrk {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 20px 25px;
+    align-items: center;
+  }
+  .pdfBookMrk {
+    display: flex;
+    column-gap: 17px;
+  }
+  .pdfBookMrk span {
+    color: #000B33;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200.5%; /* 32.08px */
+  }
+  .pdfBookMrk img {
+    width: 20px;
+    height: 30px;
+  }
+  
+  /* ----end Header---- */
+  .pdfInnerActions {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    max-width: 300px;
+    width: 100%;
+    transform: translate(50%, -50%);
+  }
+  .pdfInnerBoxWrap {
+    display: flex;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 5px 10px 10px rgba(185, 185, 203, 0.25);
+    padding: 14px 20px 14px;
+    width: auto;
+    max-width: fit-content;
+    justify-content: center;
+    margin-bottom: 20px;
+  
+  }
+  
+  .pdfInnerBtn {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    max-width: max-content;
+    color: #676E86;
+    font-family: 'PlusJakartaSans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding: 0 10px;
+  
+  }
+  .pdfInnerBtn:not(:last-child)::after {
+    content: "";
+    border-right: 2px solid #ddd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background: #D9D9D9;
+  }
+  
+  .pdfColorPickerWrap {
+    column-gap: 10px;
+  }
+  .pdf-color-container ul {
+    display: flex;
+    column-gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .pdf-color-container li.pdfTxtColor {
+    width: 15px;
+    height: 15px;
+    list-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* ----color Add End-------------------- */
+  
+  .pdfaddNoteBox {
+    max-width: 382px;
+    width: 100%;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 5px 45px 10px rgba(55, 55, 84, 0.10);
+    padding: 22px 24px 20px 22px;
+  }
+  .pdfInnerBoxTitle {
+    color: #000B33;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 22px;
+  }
+  .pdfaddNoteTextarea textarea {
+    border-radius: 10px;
+    border: 1px solid #E4E7ED;
+    background: #FFF;
+    min-height: 147px;
+    width: 100%;
+    padding: 10px;
+    color: #60667B;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .pdfaddNoteTextarea textarea:focus{
+    overflow: hidden;
+    outline:none;
+  }
+  .pdfsaveBtnWrap {
+    text-align: right;
+    padding-top: 20px;
+  }
+  .pdfsaveBtn {
+    display: flex;
+    max-width: 86px;
+    width: 100%;
+    padding: 10px 5px;
+    justify-content: center;
+    border-radius: 10px;
+    background: #1C3E77;
+    border: none;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  /* ----pdf-Popup-Start---------- */
+  .pdfpopupOverlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 11, 51, 0.20);
+      z-index: 1;
+  }
+  .pdfpopupBox {
+    position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: fit-content;
+      z-index: 2;
+  }
+  
+  .pdfpopupBoxIn {
+    border-radius: 12px;
+    box-shadow: 0px 10px 50px 10px rgba(70, 70, 118, 0.15);
+    max-width: 363px;
+    width: 100%;
+    padding: 45px 33px 45px 40px;
+    margin: auto;
+    height: fit-content;
+    max-height: 95%;
+    position: fixed;
+    top: 110px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:var(--white_primary);
+  }
+  .optSrchInp input {
+    border: 0;
+    outline: 0;
+  }
+  
+  .optTop {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DEE2E7;
+  }
+  .optSrchWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .optSrchInp {
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+  
+  .optSrchInp input {
+    width: 100%;
+    color: var(--blue_primary);
+    font-size: 16px;
+    line-height: 188.5%;
+  }
+  
+  .optSrchIcon {
+    display: flex;
+  }
+  
+  .optSrchIcon img {
+    flex-shrink: 0;
+    max-width: 22px;
+  }
+  
+  
+  .pdfAccordionWrap {
+    padding-top: 28px;
+  }
+  .pdfAccordionTab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .pdfAccordionNumIcon {
+    display: flex;
+    column-gap: 14px;
+    align-items: center;
+  
+  }
+  
+  .pdfAccordionChaptCount {
+    width: 24px;
+    height: 24px;
+    background: #1C3E77;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .pdfAccordionChapt{
+    color: #000B33;
+    font-family: 'PlusJakartaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .pdfAccordionDropIcon {
+    display: flex;
+    cursor: pointer;
+  }
+  .pdfAccordionBox {
+    border-radius: 10px;
+    background: #F3F6FB;
+    padding: 12px 15px 17px 19px;
+    margin-bottom: 13px;
+  }
+  .pdfAccordionFt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pdfAccordionTxt h5 {
+    color: #000B33;
+    font-family: 'PlusJakartaSans';
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 200.5%; /* 32.08px */
+  }
+  
+  .pdfAccordionTxt p {
+    color: #60667B;
+    font-family: 'PlusJakartaSans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150.5%; /* 24.08px */
+    padding-bottom: 6px;
+  }
+  .pdfAccordionDateTime {
+    color: #5F6579;
+    text-align: right;
+    font-family: 'PlusJakartaSans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 14px */
+  }
+  .pdfAccordionAction {
+    display: flex;
+    column-gap: 10px;
+    cursor: pointer;
+  }
+  .pdfAccordionTabContent {
+    max-height: 350px;
+    overflow-y: auto;
+    /* padding-right: 20px; */
+  }
+  .pdfAccordionItem {
+    margin-bottom: 31px;
+  
+  }
+  .pdfAccordionWrap {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  
+  .pdfAccordionItem.active .pdfAccordionTab {
+    border: none;
+  }
+  .pdfAccordionItem.active .pdfAccordionDropIcon{
+    transform: rotate(180deg);
+  }
+  .pdfAccordionItem .pdfAccordionBox {
+    display: none;
+  }
+  .pdfAccordionItem.active .pdfAccordionBox {
+    display: block;
+  }
+  /* -----PDF Table Contents----start------------- */
+  .pdfTableContentList {
+    padding-top: 18px;
+  }
+  
+  .pdfTableContentList ol {
+    padding: 0 0 0 16px;
+    margin: 0;
+  }
+  .pdfTableContentList li {
+    position: relative;
+    list-style: auto;
+  }
+  
+  .pdfTableContentList .pdfTableContentsubList {
+    list-style: lower-alpha;
+    padding: 0 0 0 15px;
+  }
+  .tableContentTxt {
+    color: #000B33;
+    font-family: 'PlusJakartaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 261%; /* 41.76px */
+    margin: 0;
+  }
+  .tableContentserialNo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000B33;
+    text-align: right;
+    font-family: 'PlusJakartaSans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 261%; /* 41.76px */
+    text-decoration-line: underline;
+  }
+  
+  
+  .pdfHeadingWrap {
+    text-align: center;
+  }
+  .pdfMainTtle {
+    color: #000B33;
+    font-family: 'PlusJakartaSans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+    padding-bottom: 10px;
+  }
+  .pdfsmallTtle {
+    color: #A1A3AB;
+    font-family: 'PlusJakartaSans';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.pdfSubTtle {
+    color: #000B33;
+    text-align: center;
+    font-family: 'PlusJakartaSans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 197.5%;
+    letter-spacing: 10.5px;
+    padding-top: 10px;
+}
+.pdfImage {
+    padding: 10px 0 0px;
+}
+  .pdfCnt p {
+    color: #000B33;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 200.5%; /* 52.13px */
+    padding-bottom: 20px;
+  }
+
+  .pdfSubDesc {
+    color: #000B33;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200.5%; /* 60.15px */
+    padding-bottom: 15px;
+  }
+  .pdfCnt  {
+    padding: 25px 20px 0;
+    margin: 20px 0px 0;
+  }
+  .grey-bg{
+    background: rgba(221, 225, 231, 0.30);
+  }
+  .pdfDescWrap {
+    padding: 25px 0 0;
+    position: relative;
+  }
+  .pdfCnt:last-child {
+    padding-bottom: 15px;
+  }
+  .pgCenter {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .pdfMainWrap {
+    padding-bottom: 20px;
+  }
+  p span {
+    background: #f8d1ca;
+    position: relative;
+  }
+  p span::after {
+    content: "";
+    background: url(../images/colorPckRt.svg) 0 0 no-repeat;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+    width: 15px;
+    height: 15px;
+    background-size: 15px;
+  }
+  p span::before{
+    content: "";
+    background: url(../images/colorPckLt.svg) 0 0 no-repeat;
+    position: absolute;
+    left: -14px;
+    bottom: -15px;
+    width: 15px;
+    height: 15px;
+    background-size: 15px;
+  }
+  .popupLgClose {
+    position: absolute;
+    right: 28px;
+    top: 18px;
+}
+
+/* ----popupPdfNav--start-------------- */
+.pdfPopupNavList {
+  padding-top: 20px;
+}
+.pdfPopupNavList li  {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  column-gap: 20px;
+  cursor: pointer;
+}
+
+.pdfPopupNavList li img {
+  max-width: 52px;
+}
+.pdfEnlargeIcon {
+  width: 20px;
+  height: 20px;
+}
+.pdfPopupNavList li .pdfEnlargeIcon img {
+  width: 16px;
+  height: 16px;
+}
+.pdfPopupNavList li .notesListIcon img  {
+  width: 20px;
+  height: 20px;
+}
+.pdfPopupNavList li .pdfTocIcon img {
+  width: 20px;
+  height: 20px;
+}
+.pdfNavPopupBoxIn {
+  border-radius: 24px;
+  background: #FFF;
+  padding: 45px 32px 50px 32px;
+}
+.pdfNavPopupBoxIn .popupLgClose {
+  right: 28px;
+  top: 20px;
+}
+.pdfNavHide {
+  display: none;
+}
+.pdfNavDot {
+  display: none;
+}
+
+@media screen and (max-width:1199px) {
+  .pgCenter {
+    width: 90%;
+  }
+}
+@media screen and (max-width:768px) {
+  .pdfNav {
+    display: none;
+  }
+  .pdfpopupBoxIn {
+    width: 95%;
+    top: 240px;
+  }
+  .pdfNavHide {
+    display: block;
+  }
+  .pdfNavDot {
+    display: block;
+  }
+  .pdfBackwrap img {
+    max-width: 20px;
+    width: 100%;
+  }
+  .pdfpopupBoxIn {
+		padding: 45px 25px 45px 30px;
+	}
+  .popupLgClose {
+    position: absolute;
+    right: 23px;
+  }
+ 
+}

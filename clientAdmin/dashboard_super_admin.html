@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>goBookify | Admin - Dashboard</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!--[if lt IE 10]><script src="js/IEupdate.js" type="text/javascript"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/common.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/admin-login.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/commonV1.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/table.css">
+</head>
+
+<body id="body">
+    <div class="outer-wrapper">
+        <div class="left-container">
+            <div class="left-menu-section">
+                <div class="leftmenu-top">
+                    <a href="/dashboard" class="logo">
+                        <img src="images/adminLogo.svg" alt="goBookify">
+                    </a>
+
+                </div>
+                <nav class="left-menu">
+                    <ul>
+                        <li>
+                            <a class="active">
+                                <span class="menu-icon">
+                                    <img src="images/dashboard_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/clients_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Clients</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/bill_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Subscription</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/admin_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Admin</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/materials_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Materials</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/setting_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Settings</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/Topics_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Topics</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="topmenu-wrapper">
+                <div class="search-area">
+                    <div class="optSrchWrap">
+                        <div class="optSrchIcon">
+                            <img src="images/ic_Search_bl.svg" alt="icon">
+                        </div>
+                        <div class="optSrchInp">
+                            <input type="text" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="top-nav-buttons">
+                    <li>
+                        <a>
+                            <img src="images/notification-bell_Icon.svg" alt="goBookify" />
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="images/user-profile.svg" alt="goBookify" />
+                        </a>
+                        <div class="profileTopDrop" style="display: none;">
+                            <h3>Robert Manuel</h3>
+                            <p>robertmanuel@gmail.com</p>
+
+                            <ul class="menuListV2">
+                                <li><a><img src="images/user_icon.svg" alt="User"> Profile</a></li>
+                            </ul>
+
+                            <a class="btnV2 v4">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="content-outer-wrapper">
+
+                <div class="rowV1">
+                    <div class="colV1 tile5 profileDes">
+                        <div class="profileDesDtls">
+                            <div>
+                                <h2><span>Hi,</span> Robert Manuel</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum </p>
+                            </div>
+                            <img src="images/dashboard.png" alt="Dashboard">
+                        </div>
+                    </div>
+
+                    <div class="colV1 tile4 graphHolder">
+                        <div class="rowV1">
+                            <div class="colV1">
+                                <div class="topSec">
+                                    <h3>Public Materials</h3>
+                                </div>
+                                <div class="info">
+                                    <span>Total Materials</span>
+                                    <strong>3,432</strong>
+                                </div>
+
+                                <ul class="graphLabel">
+                                    <li><em style="background-color: #5971C0;"></em>PDF</li>
+                                    <li><em style="background-color: #9EC97F;"></em>E PUB</li>
+                                    <li><em style="background-color: #F3C96B;"></em>Audio</li>
+                                </ul>
+                            </div>
+                            <div class="colV1">
+                                Chart
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="colV1 tile2 graphHolder">
+                        <div class="topSec">
+                            <figure style="background-color: #D0F1DC;">
+                                <img src="images/total_clients_icon.svg" alt="Public Materials">
+                            </figure>
+                        </div>
+                        <div class="info">
+                            <span>Total Clients</span>
+                            <strong>2,452</strong>
+                        </div>
+                    </div>
+                    <div class="colV1 tile2 graphHolder">
+                        <div class="topSec">
+                            <figure style="background-color: #D0F1DC;">
+                                <img src="images/total_clients_icon.svg" alt="Public Materials">
+                            </figure>
+                        </div>
+                        <div class="info">
+                            <span>Total Individual Users</span>
+                            <strong>2,452</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rowV1">
+                    <div class="colV1 tile5 newSignups">
+
+                        <div class="content-search-wrap">
+                            <label>New Signups</label>
+                            <form>
+                                <div class="content-filter-search">
+                                    <div class="buttonWrap">
+                                        <button class="blue-btn createBtn">Revenue Generated</button>
+                                    </div>
+                                    <select>
+                                        <option>Start Date</option>
+                                    </select>
+                                    <select>
+                                        <option>End Date</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="rowV1 userGraph">
+                            <div class="colV1 tile5">
+                                Graph
+                            </div>
+                            <div class="colV1 tile2">
+                                <div class="info">
+                                    <span>TOTAL REVENUE</span>
+                                    <em>AED </em>
+                                    <strong>2,759</strong>
+                                </div>
+                                <ul class="graphLabel verticalList">
+                                    <li><em style="background-color: #5971C0;"></em>Individual User</li>
+                                    <li><em style="background-color: #9AB7E7;"></em>Client Contracts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="colV1 tile4 subEnding">
+                        <div class="rowV1">
+                            <div class="colV1">
+                                <div class="topSec">
+                                    <h3>Subscriptions
+                                        ending this week</h3>
+                                    <div class="content-search-wrap">
+
+                                        <form>
+                                            <div class="content-filter-search">
+
+
+                                                <select>
+                                                    <option>Individual user</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table tableClient">
+                                        <thead>
+                                            <tr>
+                                                <th>User Name</th>
+                                                <th>Expiry Date</th>
+                                                <th>Plan</th>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody> 
+                                            <tr>
+                                                <td class="profileImgWrap">
+                                                    <span class="profImg"
+                                                        style="background-image: url(images/profile_img1.svg);"></span>
+                                                    <span class="clientNme">Courtney Henry</span>
+                                                </td>
+                                                <td>2 may 2023</td>
+                                                <td class="colorGold">Gold</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="profileImgWrap">
+                                                    <span class="profImg"
+                                                        style="background-image: url(images/profile_img1.svg);"></span>
+                                                    <span class="clientNme">Courtney Henry</span>
+                                                </td>
+                                                <td>2 may 2023</td>
+                                                <td class="colorBronze">Gold</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="profileImgWrap">
+                                                    <span class="profImg"
+                                                        style="background-image: url(images/profile_img1.svg);"></span>
+                                                    <span class="clientNme">Courtney Henry</span>
+                                                </td>
+                                                <td>2 may 2023</td>
+                                                <td class="colorSilver">Gold</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <button class="blue-btn createBtn">View All ending subscriptions</button>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="colV1 tile4 activeHolder">
+                        <div class="activeList">
+                            <div class="topSec">
+                                <figure style="background-color: #D0F1DC;">
+                                    <img src="images/total_clients_icon.svg" alt="Public Materials">
+                                </figure>
+                                <h3>Active Users</h3>
+                            </div>
+                            <div class="rowV1 activeUser">
+                                <div class="info">
+                                    <span>Client Users</span>
+                                    <strong>2,452</strong>
+                                </div>
+                                <div class="info">
+                                    <span>Individual Users</span>
+                                    <strong>2,452</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activeList">
+                            <div class="topSec">
+                                <figure style="background-color: #D0F1DC;">
+                                    <img src="images/total_clients_icon.svg" alt="Public Materials">
+                                </figure>
+                                <h3>New Subscribers</h3>
+                            </div>
+                            <div class="rowV1 activeUser">
+                                <div class="info">
+                                    <span>Clients</span>
+                                    <strong>2,452</strong>
+                                </div>
+                                <div class="info">
+                                    <span>Individual Users</span>
+                                    <strong>2,452</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="rowV1">
+                    <div class="colV1 tile5">
+
+                        <div class="topSec">
+                            <h3>Clients</h3>
+                            <a class="btnViewAll">View All</a>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table tableClient">
+                                <thead>
+                                    <tr>
+                                        <th>Client Name</th>
+                                        <th>Users</th>
+                                        <th>Admin</th>
+                                        <th>Materias</th>
+                                        <th>Storage</th>
+                                        <th>Status</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Zam School LLC </td>
+                                        <td>200</td>
+                                        <td>10</td>
+                                        <td>2,000</td>
+                                        <td>2GB</td>
+                                        <td>
+                                            <a href="" class="activeBtn">Active</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zam School LLC </td>
+                                        <td>200</td>
+                                        <td>10</td>
+                                        <td>2,000</td>
+                                        <td>2GB</td>
+                                        <td>
+                                            <a href="" class="inactiveBtn">Inactive</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zam School LLC </td>
+                                        <td>200</td>
+                                        <td>10</td>
+                                        <td>2,000</td>
+                                        <td>2GB</td>
+                                        <td>
+                                            <a href="" class="activeBtn">Active</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zam School LLC </td>
+                                        <td>200</td>
+                                        <td>10</td>
+                                        <td>2,000</td>
+                                        <td>2GB</td>
+                                        <td>
+                                            <a href="" class="activeBtn">Active</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                    <div class="colV1 tile6"> 
+                        <div class="topSec">
+                            <h3>Error Logs</h3>
+                            <a class="btnViewAll">View All</a>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table tableError">
+                                <thead>
+                                    <tr>
+                                        <th>Error Message</th>
+                                        <th>Plat form</th>
+                                        <th>User Type</th>
+                                        <th>Date & Time</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="bulletV1"></span>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. </td>
+                                        <td>web App</td>
+                                        <td>Client User- ABC</td>
+                                        <td>2 may 2023</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="bulletV1"></span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                                        <td>web App</td>
+                                        <td>Client User- ABC</td>
+                                        <td>2 may 2023</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div> 
+                </div>
+            </div>
+ 
+            <div class="bottom-menu-wrapper">
+                <div class="copyrightWrap">
+                    <p>© 2023 gobookify - All right Reserved</p>
+                </div>
+                <div class="bottom-menu-list">
+                    <ul>
+                        <li>Terms & Condition </li>
+                        <li>Policy</li>
+                        <li> Privacy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

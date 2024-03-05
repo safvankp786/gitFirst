@@ -1,0 +1,583 @@
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	min-height: 100%;
+	/*-ms-overflow-style: none; 
+  	scrollbar-width: none;  */
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	color: #C5C6C8;
+    font-weight: 500;
+    font-style: normal;
+	font-size: 18px;
+	line-height: 23px;
+	background: #ebf4f1 url(../images/body-bg.jpg) no-repeat bottom center;
+	background-size: cover;
+	background-attachment: fixed;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+
+a, a:link, a:visited {
+    outline: none;
+	text-decoration: none;	
+	-moz-tap-highlight-color: transparent; 
+	-webkit-tap-highlight-color: transparent; 
+}
+
+img {
+	border: none;
+	margin: 0px;
+	max-width: 100%;
+}
+
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+	font-size: 60px;
+	color: #626364;
+	line-height: 75px;
+	margin: 0px;
+	padding: 0px;	
+}
+
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 50px;
+	color: #626364;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px;	
+}
+
+h3 {
+	font-size: 40px;
+	line-height: 45px;
+}
+
+h4 {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+form, input, select, textarea, p {
+	margin: 0px;
+	padding: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+input::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section, time {  
+	display: block; 
+	margin: 0px;
+	padding: 0; 
+} 
+
+/*IE below 9*/
+#ieWrapper {
+	background: #000;
+	position: fixed;
+	z-index: 100;
+	top: 0;	left: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.ieHolder {
+	position: relative; 
+	width: 555px;
+	padding: 20px;
+	margin: 200px auto 0 auto;
+	background: #FFF;
+	border: 7px solid #2b2927;
+}
+
+.btnIeUpdate {
+	background: url(../images/btnIeUpdate.jpg) 0 0 no-repeat;
+	width: 144px;
+	height: 37px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	color: #fff;
+	line-height: 37px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.ieLogo {
+	float: left;
+	width: 134px;
+	height: 139px;
+	background: url(../images/ieLogo.jpg) no-repeat 0 0;
+}
+
+.ieContent {
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 350px;
+	color: #666;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.ieContent strong {
+	margin: 0 0 15px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px dashed #cccccc;
+	display: block;
+	font-size: 18px;
+	color: #333;
+	font-weight: normal;
+}
+/*End IE below 9*/
+
+* {
+	box-sizing: border-box;
+}
+.loader {
+	min-width: 150px;
+	max-width: 237px;
+	width: 17vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: loader-spin 1s infinite linear;   
+}
+.loader.loader-stop {
+	animation: loader-spin 1s 1 linear;  
+}
+@keyframes loader-spin {
+	0%  {transform: translate(-50%, -50%) rotate(0deg);}
+    100% {transform: translate(-50%, -50%) rotate(360deg);}   
+}
+
+.scroll-down {
+	color: #949496;
+	font-size: 20px;
+	line-height: 25px;
+	position: fixed;
+	bottom: 32px;
+	left: 50%;
+	transform: translate(-50%, -30px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 17px;
+	opacity: 0;
+}
+
+.scroll-down::after {
+	content: "";
+	background: url(../images/scroll-down.svg) no-repeat center 0;
+	width: 26px;
+	height: 14px;
+	-webkit-animation: scroll-down 2s infinite cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scroll-down {
+	0%  {transform: translateY(0);}
+	50% {transform: translateY(8px);}   
+    100% {transform: translateY(0);}   
+}
+
+.screen-container {
+	/*background: url(../images/Group.jpg) no-repeat center -19px;
+	opacity: 0.5;*/
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.main-screen {
+	width: 100%;
+	height: 100vh;
+	max-height: 910px;
+	max-width: 1550px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.main-screen h2 {
+	color: #626364;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.main-title, .business-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.main-title span, .business-title span {
+	opacity: 0;
+}
+
+.scroll-handle {
+	width: 5px;
+	height: calc(100vh);
+}
+
+.management-label-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.img-management-wrap, .img-operations-wrap {
+	width: 396px;
+	height: 70px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: rotateY(150deg);
+	opacity: 0;
+}
+
+.img-circle-wrapper, .img-circle-operations {
+	font-weight: 600;
+	background: #FFF;
+	border-radius: 60px;
+	padding: 5px;
+	box-shadow: 0px 6px 12px #0000000D;
+	display: flex;
+	align-items: center;
+}
+
+.img-circle-wrapper img, .img-circle-operations img {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 60px;
+	display: block;
+}
+
+.img-circle-wrapper aside, .img-circle-operations aside {
+	overflow: hidden;
+}
+
+.img-circle-wrapper p, .img-circle-operations p {
+	white-space: nowrap;
+}
+
+.img-Lawyer {
+    left: 21%;
+    top: 21%;
+}
+
+.img-LegalClerk {
+	left: 21%;
+    top: 8%;
+}
+
+.img-LegalClerk {
+    left: 0;
+    top: 48%;
+}
+
+.img-Paralegal {
+	left: 0;
+    top: 35%;
+}
+
+.img-Paralegal {
+    left: 17%;
+    top: 71%;
+}
+
+.img-LegalSupport {
+    left: 43%;
+    top: inherit;
+    bottom: 9%;
+}
+
+.img-circle-wrapper aside, .img-circle-operations aside {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	width: 0;
+	opacity: 0;
+}
+
+.img-circle-wrapper p, .img-circle-operations p {
+	padding: 0 10px;
+	white-space: nowrap;
+}
+
+.img-circle-wrapper span, .img-circle-operations span {
+	display: flex;
+	gap: 0 4px;
+	padding: 0 10px 0 5px;
+}
+
+
+.img-circle-wrapper strong, .img-circle-operations strong {
+	content: "";
+	font-size: 0;
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+	background: #949496;
+	gap: 0 4px;
+	opacity: 0;
+}
+
+.img-Associate {
+    left: inherit;
+    top: 64%;
+    right: 9%;
+}
+
+.img-LegalSecretary {
+    left: inherit;
+    right: 0;
+    top: 33%;
+}
+
+.img-Attorney {
+    left: 49%;
+    top: 8%;
+}
+
+.text-management, .text-operations {
+	font-size: 20px;
+	line-height: 25px;
+	position: absolute;
+}
+
+.text-management span, .text-operations span {
+	opacity: 0;
+	transform: rotateX(150deg);
+	display: block;
+}
+
+.text-management-arbitration {
+	top: 13%;
+    left: 25%;
+}
+
+.text-management-corporate {
+	top: 34%;
+    left: 0;
+}
+
+.text-management-dispute {
+    top: 67%;
+    left: 10%;
+}
+
+.text-management-employment {
+    top: 88%;
+    left: 20%;
+}	
+
+.text-management-criminal {
+    top: 66%;
+    left: 41%;
+}
+
+.text-management-family {
+	bottom: 15%;
+    right: 26%;
+}
+
+.text-management-estate {
+	top: 51%;
+    right: 6%;
+}
+
+.text-management-intellectual {
+	top: 20%;
+    right: 12%;
+}
+
+.text-management-litigation {
+    top: 35%;
+    left: 54%;
+}
+
+.img-circle-title, .img-circle-title-operations {
+	font-size: 20px;
+	line-height: 25px;
+	color: #949496;
+	padding-top: 8px;
+}
+
+.img-circle-title span, .img-circle-title-operations span {
+	opacity: 0;
+	transform: rotateX(150deg);
+	display: block;
+}
+
+.title-status, .title-status-operations {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.title-status span, .title-status-operations span {
+	font-size: 18px;
+	line-height: 23px;
+	font-weight: 600;
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	height: 70px;
+	padding: 0 20px;
+	border: 5px solid #FFF;
+	border-radius: 40px;
+	background: #E83521;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.t-pending span {
+	background: #DD8340;
+}
+
+.img-FinanceManager {
+    left: 34%;
+    top: 7%;
+}
+
+.img-MarketingManager {
+    left: 7%;
+    top: 30%;	
+}
+
+.img-Accountant {
+    left: 0;
+    top: 55%;	
+}
+
+.img-HR-Administrator {
+    left: 52px;
+    top: 75%;
+}
+
+.img-Librarian {
+	left: 28%;
+    bottom: 4%;
+}
+
+.img-ComplianceOfficer {
+    left: 34%;
+    bottom: 31%;
+}
+
+.img-OfficeCoordinator {
+    right: 18%;
+    bottom: 17%;
+}
+
+.img-AccountsAssistant {
+    right: 3%;
+    bottom: 45%;
+}
+
+.img-AdminSupport {
+    right: 11%;
+    top: 19%;
+}
+
+.img-FinanceManagerOpe {
+    right: 32%;
+    top: 31%;
+}
+
+.text-HumanResources {
+    left: 20%;
+    top: 16%;
+}
+
+.text-FinanceAccounting {
+    left: 0;
+    top: 40%;
+}
+
+.text-Marketing {
+    left: 26%;
+    top: 55%;
+}
+
+.text-RiskManagement {
+    left: 22%;
+    bottom: 10%;
+}
+
+.text-KnowledgeManagement {
+    right: 11%;
+    bottom: 22%;
+}
+
+.text-Compliance {
+    right: 29%;
+    top: 39%;
+}
+
+.text-BusinessDevelopment {
+	right: 20%;
+    top: 10%;
+}
+
+.title-yelloe span {
+	background: #F5C33A;
+}
+
+
+
+/*Trigger*/
+.trigger-main-title, .trigger-testing, .trigger-img-circle, .trigger-text-management, .trigger-text-management-fade,
+.trigger-img-circle-title, .trigger-img-circle-label, .trigger-title-status, .trigger-title-status-blur, .trigger-main-title-fade,
+.trigger-management-label-wrapper, .trigger-img-operations-wrap, .trigger-text-operations, .trigger-text-operations-fade, 
+.trigger-img-circle-title-operations, .trigger-img-circle-label-operations, .trigger-title-status-operations, .trigger-title-status-operations-move {
+	height: 300px;
+}

@@ -1,0 +1,76 @@
+ 
+.table thead th:nth-child(1) {
+	width: 95%;
+}
+
+.sortIcon {
+	vertical-align: middle; 
+}
+
+.sortIcon img { 
+	max-width: 17px;
+	margin-right: 20px;
+}
+
+.content-filter-search { 
+	justify-content: end;
+}
+
+.modalHolder {
+	max-width: 424px;
+}
+
+.fileUploadV1 figure { 
+	border: 1px solid #8C8FA8;
+}
+
+
+
+.profileInfoV1 {
+	display: flex;
+	align-items: center;
+}
+
+.profileInfoV1 figure {
+	max-width: 122px;
+	height: 122px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	display: block;
+	flex-grow: 2; 
+	background-size: 67px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.profileInfoV1 .proCont {
+	padding: 0 0 0 29px;
+}
+
+.profileInfoV1 .proCont strong {
+	padding: 0 16px 0 0;
+}
+.profileInfoV1 strong {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.tableHolder .content-search {
+	max-width: 300px;
+}
+
+.profileInfoV1 {
+	padding: 0 0 36px 0;
+}
+
+.content-title-search-wrap { 
+	padding-bottom: 24px;
+}
+
+.btnEdit {
+	margin-left: auto;
+}

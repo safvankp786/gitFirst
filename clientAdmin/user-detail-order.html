@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>goBookify | Admin - Clients & Contracts</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!--[if lt IE 10]><script src="js/IEupdate.js" type="text/javascript"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/common.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/admin-login.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/table.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/commonV1.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/commonN1.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/client-dtls-admin-dtls.css">
+    <!-- <link rel="stylesheet" type="text/css" media="all" href="css/client-dtls.css"> -->
+</head>
+
+<body id="body">
+    <div class="outer-wrapper">
+        <div class="left-container">
+            <div class="left-menu-section">
+                <div class="leftmenu-top">
+                    <a href="/dashboard" class="logo">
+                        <img src="images/adminLogo.svg" alt="goBookify">
+                    </a>
+                </div>
+                <nav class="left-menu">
+                    <ul>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/dashboard_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/clients-iconv2.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Clients</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a class="active">
+                                <span class="menu-icon">
+                                    <img src="images/users_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Users</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/bill_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Subscription</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/admin_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Super Admin</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/materials_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Materials</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/setting_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Settings</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/Topics_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Topics</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="topmenu-wrapper">
+                <div class="search-area">
+                    <div class="optSrchWrap">
+                        <div class="optSrchIcon">
+                            <img src="images/ic_Search_bl.svg" alt="icon">
+                        </div>
+                        <div class="optSrchInp">
+                            <input type="text" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="top-nav-buttons">
+                    <li>
+                        <a>
+                            <img src="images/notification-bell_Icon.svg" alt="goBookify" />
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="images/user-profile.svg" alt="goBookify" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-outer-wrapper content-outer-wrapper-v2">
+                <div class="whiteroundbox dashboardTopSec">
+                    <div class="brdCrmbWrap">
+                        <div class="brdCrmbItm">
+                            <div class="brdCrmbTxt">DashBoard</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="brdCrmbItm">
+                            <div class="brdCrmbTxt">Admins</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="brdCrmbItm active">
+                            <div class="brdCrmbTxt">Darrel Steward</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Super Admin</h4>
+
+                    <a href="javascript:void(0)" class="btnBack"></a>
+
+                    <div class="profileInfoV1 profileInfoV2">
+                        <figure style="background-image: url(images/clientLginBg.jpg);"></figure>
+                        <div class="proCont">
+                            <h5>Darrell Steward</h5>
+                            <a href="javascript:void(0)" class="activeBtn">Active</a>
+                            <a class="btnEdit">edit</a>
+                        </div>
+                    </div>
+
+                    <div class="personalInfo">
+                        <h5>Personal Information</h5>
+                        <div class="personal-row personal-row-v2">
+                            <div class="personal-col">
+                                <label>First Name</label>
+                                <p>Darrell</p>
+                            </div>
+                            <div class="personal-col">
+                                <label>Last Name</label>
+                                <p>Steward</p>
+                            </div>
+                            <div class="personal-col">
+                                <label>Date of Birth</label>
+                                <p>10 Jan 1981</p>
+                            </div>
+                            <div class="personal-col">
+                                <label>Email Address</label>
+                                <p>darrellsteward@gmail.com</p>
+                            </div>
+                            <div class="personal-col">
+                                <label>Phone Number</label>
+                                <p>+971 256 2365</p>
+                            </div>
+                            <div class="personal-col gold-plan">
+                                <label>Subscription Plan</label>
+                                <p>Gold Plan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="whiteroundbox whiteroundbox-v2">
+
+                <ul class="tabV1">
+                    <li class="selected">ORDER HISTORY</li>
+                    <li>ACTIVITY LOG</li>
+                    <li>materials</li>
+                </ul>
+
+                <div class="tableWrap">
+                    <div class="table-responsive">
+                        <table class="table tableClient">
+                            <thead>
+                                <tr>
+                                    <th>Subscription<span class="sortIcon"><img src="images/sortIcon.svg"></span>
+                                    </th>
+                                    <th>Plan Type<span class="sortIcon"><img src="images/sortIcon.svg"></span>
+                                    </th>
+                                    <th class="active">Date Purchased<span class="sortIcon"><img
+                                                src="images/sortIcon.svg"></span></th>
+                                    <th>Expiry Date<span class="sortIcon"><img src="images/sortIcon.svg"></span>
+                                    </th>
+                                    <th>Billing Receipt<span class="sortIcon"><img src="images/sortIcon.svg"></span></th>
+                                    
+                                    <th>Status<span class="sortIcon"><img src="images/sortIcon.svg"></span></th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="subCat colorGold">Gold</td>
+                                    <td>Monthly Plan</td>
+                                    <td>10 Jan 2023</td>
+                                    <td>10 Apr 2023</td>
+                                    <td>
+                                        <a class="pdfList">
+                                            <img src="images/icon-sheet.svg" alt="PDF">
+                                            <span>Receipt.xl</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div class="actionBtnWrap">
+                                            <a href="" class="activeBtn">Active</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="subCat colorBronze">Bronze</td>
+                                    <td>Annual Plan</td>
+                                    <td>10 Jan 2023</td>
+                                    <td>10 Apr 2023</td>
+                                    <td>
+                                        <a class="pdfList">
+                                            <img src="images/icon-sheet.svg" alt="PDF">
+                                            <span>Receiptbill2022.xl</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div class="actionBtnWrap">
+                                            <a href="" class="expireBtn">Expired</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="subCat colorSilver">Silver</td>
+                                    <td>Annual Plan</td>
+                                    <td>10 Jan 2023</td>
+                                    <td>10 Apr 2023</td>
+                                    <td>
+                                        <a class="pdfList">
+                                            <img src="images/icon-sheet.svg" alt="PDF">
+                                            <span>Receiptbill2022.xl</span>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div class="actionBtnWrap">
+                                            <a href="" class="expireBtn">Expired</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Data not found -->
+                        <!-- <div class="listNotFound">
+                            <img src="images/contract.png" alt="No result">
+                            <p>No Contracts Created Yet</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </span>
+                             </div> -->
+                    </div>
+                </div>
+                <div class="pgnWrap pgnAdmin">
+                    <div class="countPageItemswrap">
+                        <div class="showCount">
+                            <span>Items Per Page</span>
+                            <select>
+                                <option>20</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>1</option>
+                            </select>
+                            <span>1-20 of 500 Items</span>
+                        </div>
+                    </div>
+                    <div class="pgnWrap">
+                        <div class="pgnAct">
+                            <div class="pgnActIcon">
+                                <img src="images/ic_AngleLt_md.svg" alt="icon">
+                            </div>
+                            <!-- <div class="pgnActTxt pgnActTxtPrv">PREVIOUS</div> -->
+                        </div>
+                        <div class="pgnNumWrap">
+                            <div class="pgnNum">1</div> <!-- Add 'active' class to active page number -->
+                            <div class="pgnNum active">2</div> <!-- Add 'active' class to active page number -->
+                            <div class="pgnNum">3</div> <!-- Add 'active' class to active page number -->
+                            <div class="pgnNum">4</div> <!-- Add 'active' class to active page number -->
+                            <div class="pgnNum">5</div> <!-- Add 'active' class to active page number -->
+                        </div>
+                        <div class="pgnAct">
+                            <!-- <div class="pgnActTxt pgnActTxtNxt">NEXT</div> -->
+                            <div class="pgnActIcon">
+                                <img src="images/ic_AngleRt_md.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-menu-wrapper">
+                <div class="copyrightWrap">
+                    <p>© 2023 gobookify - All right Reserved</p>
+                </div>
+                <div class="bottom-menu-list">
+                    <ul>
+                        <li>Terms & Condition </li>
+                        <li>Policy</li>
+                        <li> Privacy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

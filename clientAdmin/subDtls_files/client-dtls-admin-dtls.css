@@ -1,0 +1,102 @@
+.profileInfoV1 {
+	display: flex;
+	align-items: center;
+}
+
+.profileInfoV1 figure {
+	max-width: 122px;
+	height: 122px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	display: block;
+	flex-grow: 2;
+	width: 25%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.profileInfoV1 strong {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.profileInfoV1 em {
+	display: block;
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.linkV1 {
+	color: #7A83A4;
+	font-family: 'PlusJakartaSans';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	display: table;
+	padding: 0 0 0 25px;
+	position: relative;
+}
+
+.linkV1 img {
+	max-width: 16px;
+	position: absolute;
+	left: 0;
+	top: 6px;
+}
+
+.profileInfoV1 .proCont {
+	padding: 0 0 0 29px;
+}
+
+.profileInfoV1 .proCont strong {
+	padding: 0 16px 0 0;
+}
+
+.controlTable tr:first-child th:first-child {
+	width: 75%;
+}
+
+.table tbody tr:last-child td {
+	border: none;
+}
+
+.controlTable {
+	margin: 45px 0 0 0;
+}
+
+.content-search-wrap { 
+	max-width: inherit;
+	width: 100%;
+}
+
+.content-filter-search {  
+	justify-content: space-between;
+	padding: 0 0 24px 0;
+}
+
+.content-filter-search h3 {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 33px; 
+}
+
+element.style {
+	width: 86%;
+}
+
+.logTable tr td:nth-child(2) {
+	width: 88%;
+}

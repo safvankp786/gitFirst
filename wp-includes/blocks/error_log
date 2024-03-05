@@ -1,0 +1,104 @@
+[04-Apr-2023 13:34:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[05-Apr-2023 01:02:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[09-Apr-2023 15:10:20 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[14-Apr-2023 15:50:25 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[25-Apr-2023 17:35:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[11-May-2023 11:06:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[24-May-2023 07:45:41 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[31-May-2023 18:00:10 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[06-Jun-2023 10:32:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[15-Jun-2023 20:55:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[23-Jun-2023 09:25:30 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[07-Aug-2023 02:42:52 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[10-Aug-2023 08:32:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[01-Sep-2023 23:07:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[16-Nov-2023 17:15:49 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[16-Nov-2023 17:17:33 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[16-Nov-2023 17:21:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[11-Dec-2023 14:11:55 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[15-Dec-2023 15:30:27 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[30-Jan-2024 21:00:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[15-Feb-2024 20:15:34 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[27-Feb-2024 22:22:13 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[28-Feb-2024 15:13:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[29-Feb-2024 18:56:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[02-Mar-2024 03:23:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8
+[04-Mar-2024 17:00:48 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/tijozoondia/public_html/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/tijozoondia/public_html/wp-includes/blocks/index.php on line 8

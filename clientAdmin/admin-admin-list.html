@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>goBookify | Admin - Clients & Contracts</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!--[if lt IE 10]><script src="js/IEupdate.js" type="text/javascript"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/common.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/admin-login.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/table.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/commonN1.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/commonV1.css">
+
+</head>
+
+<body id="body">
+    <div class="outer-wrapper">
+        <div class="left-container">
+            <div class="left-menu-section">
+                <div class="leftmenu-top">
+                    <a href="/dashboard" class="logo">
+                        <img src="images/adminLogo.svg" alt="goBookify">
+                    </a>
+
+                </div>
+                <nav class="left-menu">
+                    <ul>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/dashboard_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/clients-iconv2.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Users</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a class="active">
+                                <span class="menu-icon">
+                                    <img src="images/admin_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Admins</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/materials_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Materials</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/collection-icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Collections</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/users-iicon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">User Groups</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/Topics_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Topics </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="topmenu-wrapper">
+                <div class="search-area">
+                    <div class="optSrchWrap">
+                        <div class="optSrchIcon">
+                            <img src="images/ic_Search_bl.svg" alt="icon">
+                        </div>
+                        <div class="optSrchInp">
+                            <input type="text" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="top-nav-buttons">
+                    <li>
+                        <a>
+                            <img src="images/notification-bell_Icon.svg" alt="goBookify" />
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="images/user-profile.svg" alt="goBookify" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-outer-wrapper">
+                <div class="whiteroundbox">
+                    <div class="brdCrmbWrap">
+                        <div class="brdCrmbItm">
+                            <div class="brdCrmbTxt">DashBoard</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="brdCrmbItm active">
+                            <div class="brdCrmbTxt">Admins</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content-title-search-wrap">
+                        <div class="title title-v2">
+                            <h3>Admins</h3>
+                        </div>
+                        <div class="content-search-wrap content-search-wrap-v2">
+
+
+                            <form>
+
+                                <div class="content-filter-search ">
+                                    <div class="contract-expiry-date">
+                                        <label>Filter By</label>
+                                        <select>
+                                            <option>Admin Type</option>
+                                            <option>Admin Type</option>
+                                        </select>
+                                        <select>
+                                            <option>Client Admin</option>
+                                            <option>Client Admin</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="content-filter-col inputAppendV2">
+                                        <div class="inputHolder">
+                                            <div class="iconAppend">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                                    viewBox="0 0 26 26" fill="none">
+                                                    <path
+                                                        d="M20.0417 21.6667H7.04166C6.32337 21.6667 5.63449 21.3813 5.12658 20.8734C4.61867 20.3655 4.33333 19.6766 4.33333 18.9583V7.04167C4.33333 6.32337 4.61867 5.6345 5.12658 5.12659C5.63449 4.61868 6.32337 4.33334 7.04166 4.33334H20.0417C20.76 4.33334 21.4488 4.61868 21.9567 5.12659C22.4647 5.6345 22.75 6.32337 22.75 7.04167V18.9583C22.75 19.6766 22.4647 20.3655 21.9567 20.8734C21.4488 21.3813 20.76 21.6667 20.0417 21.6667ZM15.9792 20.5833V5.41667H11.1042V20.5833H15.9792ZM5.41666 7.04167V18.9583C5.41666 19.3893 5.58787 19.8026 5.89261 20.1074C6.19736 20.4121 6.61068 20.5833 7.04166 20.5833H10.0208V5.41667H7.04166C6.61068 5.41667 6.19736 5.58788 5.89261 5.89262C5.58787 6.19737 5.41666 6.61069 5.41666 7.04167ZM21.6667 7.04167C21.6667 6.61069 21.4955 6.19737 21.1907 5.89262C20.886 5.58788 20.4726 5.41667 20.0417 5.41667H17.0625V20.5833H20.0417C20.4726 20.5833 20.886 20.4121 21.1907 20.1074C21.4955 19.8026 21.6667 19.3893 21.6667 18.9583V7.04167Z"
+                                                        fill="#3D426B" />
+                                                </svg>
+                                            </div>
+                                            <input type="text" placeholder="Add Columns">
+                                        </div>
+                                    </div>
+
+                                    <div class="content-search">
+                                        <div class="optSrchInp">
+                                            <input type="text" placeholder="Search">
+                                        </div>
+                                        <div class="optSrchIcon">
+                                            <img src="images/ic_Search_bl.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                    <div class="buttonWrap">
+                                        <button class="blue-btn createBtn">
+                                            <span>
+                                                <img src="images/plusIcon.svg" alt="Plus Icon">
+                                            </span>
+                                            Add Admin
+                                        </button>
+                                        <button class="blue-btn createBtn">
+                                            <span><img src="images/iconUpload.svg" alt="Plus Icon"></span>
+                                            Bulk Upload
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+                            
+                        </div>
+
+                    </div>
+                    <div class="tableWrap">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="active">Admin Names<span class="sortIcon"><img src="images/sortIcon.svg" /></span></th>
+                                        <th>Email Address<span class="sortIcon"><img src="images/sortIcon.svg" /></span></th>
+                                        <th>Contact Number<span class="sortIcon"><img src="images/sortIcon.svg" /></span></th>
+                                        <th>Client Name<span class="sortIcon"><img src="images/sortIcon.svg" /></span></th>
+                                        <th>Admin Type<span class="sortIcon"><img src="images/sortIcon.svg" /></span></th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="profileImgWrap">
+                                            <span class="profImg"><img src="images/profile_img1.svg"
+                                                    alt="Image Profile" /></span>
+                                            <span class="clientNme">Abstergo Ltd.</span>
+                                        </td>
+                                        <td>kenzi.lawson@example.com</td>
+                                        <td>(480) 555-0103</td>
+                                        <td>Kathryn Murphy</td>
+                                        <td>Client Admin</td>
+                                        <td>
+                                            <div class="actionBtnWrap">
+                                                <a href="" class="activeBtn">Active</a>
+                                            </div>
+                                        </td>
+                                        <td><a class="listEdit"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profileImgWrap">
+                                            <span class="profImg"><img src="images/profile_img1.svg"
+                                                    alt="Image Profile" /></span>
+                                            <span class="clientNme">Abstergo Ltd.</span>
+                                        </td>
+                                        <td>kenzi.lawson@example.com</td>
+                                        <td>(480) 555-0103</td>
+                                        <td>Cody Fisher</td>
+                                        <td>Client Admin</td>
+                                        <td>
+                                            <div class="actionBtnWrap">
+                                                <a href="" class="activeBtn">Active</a>
+                                            </div>
+                                        </td>
+                                        <td><a class="listEdit"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profileImgWrap">
+                                            <span class="profImg"><img src="images/profile_img1.svg"
+                                                    alt="Image Profile" /></span>
+                                            <span class="clientNme">Abstergo Ltd.</span>
+                                        </td>
+                                        <td>kenzi.lawson@example.com</td>
+                                        <td>(480) 555-0103</td>
+                                        <td></td>
+                                        <td>Super Admin</td>
+                                        <td>
+                                            <div class="actionBtnWrap">
+                                                <a href="" class="activeBtn">Active</a>
+                                            </div>
+                                        </td>
+                                        <td><a class="listEdit"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profileImgWrap">
+                                            <span class="profImg"><img src="images/profile_img1.svg"
+                                                    alt="Image Profile" /></span>
+                                            <span class="clientNme">Abstergo Ltd.</span>
+                                        </td>
+                                        <td>kenzi.lawson@example.com</td>
+                                        <td>(480) 555-0103</td>
+                                        <td>Kathryn Murphy</td>
+                                        <td>Super Admin</td>
+                                        <td>
+                                            <div class="actionBtnWrap">
+                                                <a href="" class="activeBtn">Active</a>
+                                            </div>
+                                        </td>
+                                        <td><a class="listEdit"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profileImgWrap">
+                                            <span class="profImg"><img src="images/profile_img1.svg"
+                                                    alt="Image Profile" /></span>
+                                            <span class="clientNme">Abstergo Ltd.</span>
+                                        </td>
+                                        <td>kenzi.lawson@example.com</td>
+                                        <td>(480) 555-0103</td>
+                                        <td></td>
+                                        <td>Client Admin</td>
+                                        <td>
+                                            <div class="actionBtnWrap">
+                                                <a href="" class="activeBtn">Active</a>
+                                            </div>
+                                        </td>
+                                        <td><a class="listEdit"></a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="pgnWrap pgnAdmin">
+                        <div class="countPageItemswrap">
+                            <div class="showCount">
+                                <span>Items Per Page</span>
+                                <select>
+                                    <option>20</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>1</option>
+                                </select>
+                                <span>1-20 of 500 Items</span>
+                            </div>
+                        </div>
+                        <div class="pgnWrap">
+                            <div class="pgnAct">
+                                <div class="pgnActIcon">
+                                    <img src="images/ic_AngleLt_md.svg" alt="icon">
+                                </div>
+                                <!-- <div class="pgnActTxt pgnActTxtPrv">PREVIOUS</div> -->
+                            </div>
+                            <div class="pgnNumWrap">
+                                <div class="pgnNum">1</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum active">2</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum">3</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum">4</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum">5</div> <!-- Add 'active' class to active page number -->
+                            </div>
+                            <div class="pgnAct">
+                                <!-- <div class="pgnActTxt pgnActTxtNxt">NEXT</div> -->
+                                <div class="pgnActIcon">
+                                    <img src="images/ic_AngleRt_md.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-menu-wrapper">
+                <div class="copyrightWrap">
+                    <p>© 2023 gobookify - All right Reserved</p>
+                </div>
+                <div class="bottom-menu-list">
+                    <ul>
+                        <li>Terms & Condition </li>
+                        <li>Policy</li>
+                        <li> Privacy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

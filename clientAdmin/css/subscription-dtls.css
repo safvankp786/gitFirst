@@ -1,0 +1,32 @@
+.nameHolder {
+	padding: 0; 
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-width: 597px
+}
+
+.profileHolder h2 {
+	padding-right: 16px;
+}
+
+.profileHolder { 
+	border-bottom: none; 
+	padding: 0;
+}
+
+.checkedInfo {
+	border-bottom: 1px dashed #D6D3E7; 
+}
+
+.checkBoxV2 { 
+	padding: 0 0 0 39px;
+}
+
+.modalHolder { 
+	max-width: 424px;
+}
+
+.modifyCheck {
+	padding-bottom: 35px !important;
+}

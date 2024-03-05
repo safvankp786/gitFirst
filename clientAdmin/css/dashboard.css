@@ -1,0 +1,311 @@
+ .rowV1 {
+ 	display: flex;
+ 	font-family: 'PlusJakartaSans';
+ 	gap: 20px;
+ 	padding: 0 0 20px 0;
+ }
+
+ .profileDesDtls {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	gap: 14px;
+ 	height: 100%;
+ }
+
+ .profileDesDtls img {
+ 	max-width: 228px;
+ }
+
+ .profileDes h2 {
+ 	color: #000B33;
+ 	font-size: 22px;
+ 	font-style: normal;
+ 	font-weight: 700;
+ 	line-height: 24px;
+ 	letter-spacing: -0.22px;
+ 	padding: 0 0 20px 0;
+ }
+
+ .profileDes h2 span {
+ 	font-weight: 400;
+ }
+
+ .profileDes p {
+ 	color: #60667B;
+ 	font-size: 15px;
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	line-height: 24px;
+ 	letter-spacing: -0.15px;
+ 	max-width: 416px;
+ }
+
+ .colV1 {
+ 	border-radius: 12px;
+ 	-webkit-border-radius: 12px;
+ 	background: #FFF;
+ 	padding: 28px 32px;
+ }
+
+ 
+ .tile7 {
+	max-width: 1125px;
+	width: 100%;
+}
+
+ .tile6 {
+ 	max-width: 890px;
+ 	width: 100%;
+ }
+
+ .tile5 {
+ 	max-width: 675px;
+ 	width: 100%;
+ }
+
+ .tile4 {
+ 	max-width: 435px;
+ 	width: 100%;
+ }
+
+ .tile2 {
+ 	max-width: 210px;
+ 	width: 100%;
+ }
+
+ .colV1 h3 {
+ 	color: #60667B;
+ 	font-size: 18px;
+ 	font-style: normal;
+ 	font-weight: 700;
+ 	line-height: 24px;
+ 	letter-spacing: -0.18px;
+ 	padding: 0 0 19px 0;
+ }
+
+ .info span,
+ .info em {
+ 	color: #6D779C;
+ 	font-size: 15px;
+ 	font-style: normal;
+ 	font-weight: 500;
+ 	line-height: 24px;
+ 	letter-spacing: -0.15px;
+ 	display: block;
+ 	padding: 0 0 6px 0;
+ 	display: block;
+ }
+
+ .info em {
+ 	display: inline-block;
+ }
+
+ .info strong {
+ 	color: #2B2A3F;
+ 	font-size: 30px;
+ 	font-style: normal;
+ 	font-weight: 700;
+ 	line-height: 24px;
+ 	letter-spacing: -0.3px;
+ 	display: inline-block;
+ }
+
+ .graphLabel {
+ 	color: #6D779C;
+ 	font-size: 15px;
+ 	font-style: normal;
+ 	font-weight: 500;
+ 	line-height: 24px;
+ 	letter-spacing: -0.15px;
+ 	display: flex;
+ 	gap: 22px;
+ 	padding: 22px 0 0 0;
+ }
+
+ .graphLabel em {
+ 	width: 11px;
+ 	height: 11px;
+ 	display: inline-block;
+ 	border-radius: 100%;
+ 	-webkit-border-radius: 100%;
+ 	margin: 0 7px 0 0;
+ }
+
+ .colV1 .colV1 {
+ 	padding: 0;
+ }
+
+ .topSec figure {
+ 	max-width: 57px;
+ 	height: 57px;
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	border-radius: 100%;
+ 	-webkit-border-radius: 100%;
+ 	margin-bottom: 19px;
+ }
+
+ .topSec figure img {
+ 	max-width: 27px;
+ }
+
+ .topSec {
+ 	display: flex;
+ 	gap: 17px;
+	 align-items: center
+ }
+
+ .topSec h3 {}
+
+ .newSignups select {
+ 	max-width: 129px;
+ }
+
+ .newSignups .buttonWrap {
+ 	margin-right: auto;
+ }
+
+ /* 
+ .newSignups .content-search-wrap {
+	padding: 0 0 28px 0;
+ } */
+
+
+ .verticalList {
+ 	flex-flow: column;
+ }
+
+ .newSignups .graphLabel {
+ 	gap: 9px;
+ }
+
+ .userGraph {
+ 	height: 87%;
+ 	box-sizing: border-box;
+ }
+
+ .userGraph .rowV1 {
+ 	padding: 0;
+ }
+
+ .userGraph .colV1.tile2 {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;
+ 	padding: 28px 0 0 0;
+ }
+
+ .newSignups .info span {
+ 	padding: 0 0 14px 0;
+ }
+
+ .subEnding .content-filter-search {
+ 	column-gap: 10px;
+ 	justify-content: end;
+ }
+
+ .subEnding .colV1 h3 {
+ 	padding: 0 0 0 0;
+ }
+
+ .table thead th,
+ .table td {
+ 	font-size: 14px !important;
+ }
+
+ .profImg {
+ 	width: 31px !important;
+ 	height: 31px !important;
+ }
+
+ .table th {
+ 	padding: 6px 18px 9px !important;
+ }
+
+ .table td {
+ 	padding: 8px 18px 12px !important;
+ }
+
+ .subEnding .topSec {
+ 	padding: 0 0 27px 0;
+ }
+
+ .subEnding td:last-child {
+ 	font-weight: 600;
+ }
+
+ .activeUser {
+ 	justify-content: space-between;
+ 	gap: 0;
+ 	padding: 0 0 0 0;
+ }
+
+ .activeUser .info {
+ 	width: 50%;
+ }
+
+ .activeUser .info:last-child {
+ 	padding: 0 0 0 48px;
+ 	border-left: 1px solid #D6D3E7;
+ }
+
+ .activeHolder {
+ 	background: none;
+ 	padding: 0 0 0 0;
+ }
+
+ .activeList {
+ 	border-radius: 12px;
+ 	-webkit-border-radius: 12px;
+ 	background: #FFF;
+ 	padding: 28px 32px;
+ }
+
+ .activeList:last-child {
+ 	margin-top: 20px;
+ }
+
+ .blue-btn {
+ 	font-weight: 400;
+ }
+
+ .subEnding .blue-btn {
+ 	width: 100%;
+ 	box-sizing: border-box;
+ 	display: block;
+ 	margin: 8px 0 0 0;
+ }
+
+ .table tbody tr:last-child td {
+ 	border-bottom: none;
+ }
+
+ .btnViewAll {
+ 	color: #8C8FA8;
+ 	font-size: 14px;
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	line-height: 24px;
+ 	letter-spacing: -0.14px;
+ 	margin-left: auto;
+ }
+
+ .tableError tbody tr td {
+ 	max-width: 343px;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+
+ .bulletV1 {
+ 	width: 7px;
+ 	height: 7px;
+ 	background: rgba(250, 117, 106, 1);
+ 	display: inline-block;
+ 	border-radius: 100%;
+ 	-webkit-border-radius: 100%;
+ 	box-shadow: 0px 0px 0px 4px rgba(250, 117, 106, 0.5);
+ 	-webkit-box-shadow: 0px 0px 0px 4px rgba(250, 117, 106, 0.5);
+ 	margin: 0 14px 0 0;
+ }

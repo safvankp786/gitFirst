@@ -1,0 +1,309 @@
+/* Login CSS */
+.lgnBox {
+	max-width: 520px;
+}
+
+.lgnLogoWrap {
+	justify-content: center;
+}
+
+.lgnLogoWrap .logo {
+	margin: auto;
+	justify-content: center;
+}
+
+.lgnLogoWrap .logo img {
+	flex-shrink: 0;
+	/* max-width: 448px; */
+	max-width: 300px;
+}
+
+.lgnWrap {
+	/* padding-top: 46px; */
+	padding-top: 20px;
+}
+
+.lgnTtle {
+	text-align: center;
+	/* font-size: 30px; */
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.lgnDesc {
+	text-align: center;
+	/* font-size: 20px; */
+	font-size: 15px;
+	/* line-height: 159.5%; /* 31.9px */
+	line-height: 24px;
+}
+
+.lgnFrmWrap {
+	/* padding-top: 40px; */
+	padding-top: 24px;
+}
+
+.fgtWrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.fgtLt {
+	margin-right: 20px;
+}
+
+
+.fgtPwd {
+	color: var(--grey_label);
+	/* font-size: 20px; */
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.lgnBtnWrap {
+	/* padding-top: 51px; */
+	padding-top: 28px;
+}
+
+.noAccWrap {
+	/* padding-top: 55px; */
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.noAcc {
+	color: var(--grey_label);
+	/* font-size: 22px; */
+	font-size: 16px;
+}
+
+.noAcc span {
+	color: var(--blue_secondary);
+	font-weight: 700;
+	cursor: pointer;
+}
+/* ----Individual USER Login--END------------------- */
+
+
+
+/* ****************Client User Popup ************************************** */
+
+
+.centerWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+.forgotpswrdLink {
+	color: #5D6185;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding-top: 28px;
+    text-align: center;
+	cursor: pointer;
+}
+
+
+/* -----CLIENT USER ----END------------------------ */
+.bookLogo img {
+	max-width: 90px;
+	width: 100%;
+}
+
+.bookLogo {
+	padding: 20px 0 50px;
+	text-align: center;
+}
+
+.popupHeadingTxt {
+	padding-bottom: 25px;
+	color: #000B33;
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 28.8px */
+	letter-spacing: -0.48px;
+}
+.popupHeadingDescTxt {
+	color: #000B33;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%; /* 20.8px */
+	letter-spacing: -0.32px;
+}
+.forgotFrmWrap, .resetPswrdFrmWrap {
+	padding-top: 47px;
+}
+.SucessBox, .forgotPswrdBox, .resetPswrdBox, .checkEmailBox {
+	border-radius: 30px;
+    background-color: var(--white_primary);
+    box-shadow: 0px 12px 41px 0px rgba(0, 11, 51, 0.10);
+    padding: 60px 60px 90px;
+    width: 100%;
+    max-width: 528px;
+    margin: auto;
+}
+.otpBox, .deactivateBox, .subscriptPopupBox {
+	border-radius: 30px;
+    background-color: var(--white_primary);
+    box-shadow: 0px 12px 41px 0px rgba(0, 11, 51, 0.10);
+    padding: 60px 60px 90px;
+    width: 100%;
+    max-width: 528px;
+	width: 100%;
+    margin: auto;
+}
+.adminPopupBox {
+    position: relative;
+    z-index: 1;
+    max-width: 504px;
+    width: 100%;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 14px 43px 0px rgba(0, 11, 51, 0.05);
+    margin: auto;
+    padding: 60px 70px 80px;
+
+}
+
+.returnSignInBtn {
+    max-width: 300px;
+    margin: auto;
+}
+.returnSignInBtnWrap {
+	padding-top: 44px;
+}
+.popupBackWrap {
+	position: absolute;
+	left: 32px;
+    top: 32px;
+}
+
+
+
+@media screen and (max-width: 1450px) {
+    /* Login CSS */
+	.lgnBox {
+        padding: 25px 40px 30px;
+        max-width: 385px;
+        border-radius: 20px;
+    }
+    
+    .lgnLogoWrap .logo img {
+        max-width: 270px;
+    }
+
+    .lgnWrap {
+        padding-top: 12px;
+    }
+
+    .lgnTtle {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .lgnDesc {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .lgnFrmWrap {
+        padding-top: 15px;
+    }
+
+    .inpLblGp {
+        margin-bottom: 12px;
+    }
+
+    .gplbl {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .gpInp {
+        padding: 6px 8px;
+        border-radius: 10px;
+    }
+
+    .inpIcon {
+        margin-right: 6px;
+    }
+
+    .inpIcon img {
+        width: 20px;
+    }
+
+    .inpWrap input {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    
+
+    .fgtPwd {
+        font-size: 13px;
+    }
+
+    .lgnBtnWrap {
+        padding-top: 25px;
+    }
+
+    .darkBlueBtn {
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .noAccWrap {
+        padding-top: 20px;
+    }
+
+    .noAcc {
+        font-size: 14px;
+    }
+
+    .bookLogo {
+        padding: 20px 0 35px;
+    }
+    .popupHeadingTxt {
+        font-size: 23px;
+        padding-bottom: 22px;
+    }
+    .popupHeadingDescTxt {
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+	.darkBlueBtn {
+		height: 49px;
+	}
+	.bookLogo img {
+		max-width: 75px;
+	}
+	.forgotFrmWrap, .resetPswrdFrmWrap {
+		padding-top: 35px;
+	}
+
+	
+}
+    

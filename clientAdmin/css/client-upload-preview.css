@@ -1,0 +1,29 @@
+ h4 {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 45px;  
+	padding: 0 0 22px 0;
+ }
+
+ .btnBack {
+	margin-top: 0;
+ }
+
+ table tr:first-child th:last-child { 
+	width: 150px;
+}
+
+.content-search-wrap { 
+	max-width: inherit; 
+}
+
+.content-search-wrap { 
+	justify-content: flex-end;
+}
+
+.content-title-search-wrap {
+	padding-bottom: 22px;
+}

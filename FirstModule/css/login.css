@@ -1,0 +1,944 @@
+/* Login CSS */
+.lgnBox {
+	max-width: 520px;
+	height: fit-content;
+    max-height: 95%;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	position: fixed;
+	margin: auto;
+	padding: 60px 40px 60px;
+}
+
+.lgnLogoWrap {
+	justify-content: center;
+	/* padding-top: 30px; */
+}
+
+.lgnLogoWrap .logo {
+	margin: auto;
+	justify-content: center;
+}
+
+.lgnLogoWrap .logo img {
+	flex-shrink: 0;
+	/* max-width: 448px; */
+	max-width: 300px;
+}
+
+.lgnWrap {
+	/* padding-top: 46px; */
+	padding-top: 20px;
+}
+
+.lgnTtle {
+	text-align: center;
+	/* font-size: 30px; */
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.lgnDesc {
+	text-align: center;
+	/* font-size: 20px; */
+	font-size: 15px;
+	/* line-height: 159.5%; /* 31.9px */
+	line-height: 24px;
+}
+
+.lgnFrmWrap {
+	/* padding-top: 40px; */
+	padding-top: 24px;
+}
+
+.fgtWrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.fgtLt {
+	margin-right: 20px;
+}
+
+.kpSgnWrap {
+	display: flex;
+	align-items: center;
+}
+
+.kpSgn {
+	color: var(--grey_label);
+	/* font-size: 20px; */
+	font-size: 15px;
+}
+
+.tglWrap {
+	display: flex;
+	/* margin-right: 14px; */
+	margin-right: 10px;
+}
+
+.fgtPwd {
+	color: var(--grey_label);
+	/* font-size: 20px; */
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.lgnBtnWrap {
+	/* padding-top: 51px; */
+	padding-top: 28px;
+}
+
+.noAccWrap {
+	/* padding-top: 55px; */
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.noAcc {
+	color: var(--grey_label);
+	/* font-size: 22px; */
+	font-size: 16px;
+}
+
+.noAcc span {
+	color: var(--blue_secondary);
+	font-weight: 700;
+	cursor: pointer;
+}
+/* ----Individual USER Login--END------------------- */
+
+
+
+/* ****************Client User Popup ************************************** */
+.clientUserLoginBg {
+	background: url(../images/clientLginBg.jpg) center center no-repeat;
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+.clientUserLoginBgOvrlay {
+	background: rgba(14, 29, 58, 0.65);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+
+.centerWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.clientUserPopupBox {
+	max-width: 504px;
+	width: 100%;
+	border-radius: 15px;
+	background: #FFF;
+	box-shadow: 0px 14px 43px 0px rgba(0, 11, 51, 0.05);
+	margin: auto;
+	padding: 60px 70px 80px;
+	height: fit-content;
+    max-height: 95%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	top: 0;
+	position: fixed;
+}
+
+.forgotpswrdLink {
+	color: #5D6185;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding-top: 28px;
+    text-align: center;
+	cursor: pointer;
+}
+.clientUserPopupBox .lgnBtnWrap {
+	padding-top: 15px;
+}
+
+.clientUserPopupBox .lgnFrmWrap {
+	padding-top: 15px;
+}
+.clientUserPopupBox .logoWrap {
+	justify-content: flex-start;
+}
+.clientUserPopupBox .lgnLogoWrap .logo {
+    justify-content: flex-start;
+	margin: unset;
+}
+.clientUserColorPg {
+	background: #F6F6FA;
+	height: 100vh;
+	width: 100%;
+}
+.clientUserColorPg .clientUserPopupBox {
+	box-shadow: 0px 12px 41px 0px rgba(0, 11, 51, 0.10);
+}
+
+
+/* -----CLIENT USER LOGIN----END------------------------ */
+
+
+/* ****************SignUp Start************************************** */
+.signUpBox {
+    padding: 60px 60px 90px;
+    max-width: 620px;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+    max-height: 98%;
+    height: fit-content;
+	z-index: 99;/*add */
+}
+.inputWrapBlock {
+	display: flex;
+	padding-bottom: 15px;
+	align-items: center;
+	column-gap: 15px;
+}
+.inputWrapBlock input {
+	max-width: 375px;
+    width: 100%;
+    border-radius: 7px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid #D7DBEB;
+    background: #FFF;
+	padding: 0 12px;
+}
+.inputWrapBlock label {
+	color: #5D6185;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	min-width: 140px;
+}
+.dobWrap {
+	display: flex;
+	column-gap: 15px;
+	width: 100%;
+}
+.dobWrap input {
+	background: url(../images/calendar.svg) 98% no-repeat;
+	background-size: 25px;
+}
+.inputWrapBlock select {
+	height: 42px;
+    border-radius: 8px;
+    border: 1px solid #D7DBEB;
+    background: #FFF;
+    padding: 0 12px;
+	max-width: 106px;
+    width: 100%;
+	appearance: none;
+	background: url(../images/selectDwIcon.png) 94% no-repeat;
+    background-size: 9px;
+}
+.phoneNumWrap input[type=text] {
+	max-width: 295px;
+}
+.flex {
+	display: flex;
+}
+.signUpConditinsPolicyWrap {
+	padding-top: 40px;
+}
+.signtermsConditionPolicy, .signUpagreeInfo {
+	column-gap: 10px;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+.tgleTxt {
+	color: var(--blue_primary);
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 159.5%;
+}
+.signUpBtnWrap {
+	padding-top: 30px;
+}
+.signUpBtn {
+	border-radius: 8px;
+	background: #1C3E77;
+	width: 100%;
+	height: 56px;
+	padding: 0 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	font-family: 'PlusJakartaSans';
+}
+.alreadyRemembInfo p a {
+	color: #1C3E77;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: normal;
+}
+.alreadyRemembInfo p {
+	color: #5D6185;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-align: center;
+	padding-top: 25px;
+}
+.popupHeadingWrap {
+	padding-bottom: 40px;
+}
+.signUpHeadingTxt {
+	color: #1C3E77;
+	font-family: 'Inter';
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding-bottom: 8px;
+}
+.signUpDescTxt {
+	color: #5D6185;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 159.5%;
+}
+
+/* ****************SignUp End************************************** */
+
+/* ****************Otp Start************************************** */
+.otpBox, .deactivateBox, .subscriptPopupBox, .SucessBox, .forgotPswrdBox, .resetPswrdBox, .checkEmailBox  {
+    padding: 60px 60px 90px;
+    max-width: 528px;
+	
+}
+.otpWrap {
+	text-align: center;
+}
+.bookLogo img {
+	max-width: 90px;
+	width: 100%;
+}
+.otpInputWrap input {
+	border-bottom: 2px solid #D3D7E0;
+	max-width: 42px;
+	width: 100%;
+	padding: 10px;
+	color: #000B33;
+	text-align: center;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 33.6px */
+	letter-spacing: -0.56px;
+}
+.otpInputWrap input:not(:last-child) {
+	margin-right: 8px;
+}
+.bookLogo {
+	padding: 20px 0 50px;
+	text-align: center;
+}
+
+.popupHeadingTxt {
+	padding-bottom: 25px;
+	color: #000B33;
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 28.8px */
+	letter-spacing: -0.48px;
+}
+.popupHeadingDescTxt {
+	color: #000B33;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%; /* 20.8px */
+	letter-spacing: -0.32px;
+}
+
+.otpHeadingDescTxt a {
+	color: #000B33;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 130%;
+	letter-spacing: -0.32px;
+}
+.otpSendTimeWrap {
+	padding-top: 40px;
+}
+.otpSendTime {
+	color: #000B33;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%; /* 20.8px */
+	letter-spacing: -0.32px;
+}
+.otpSendTime span {
+	color: #ED1C24;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: -0.32px;
+	padding-left: 5px;
+}
+.recentCodeLink {
+	margin-top: 25px;
+	display: block;
+	color: #1C3E77;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 30px;
+}
+.otpSndBtn, .resetPswrdBtn, .returnSignInBtn, .saveChangebtn, .searchConfirmBtn, .deactivateBtn, .subscriptLoginBtn {
+	font-family: 'PlusJakartaSans';
+	border-radius: 8px;
+	background: #1C3E77;
+	width: 100%;
+	height: 49px;
+	padding: 0 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.otpSendTimeWrap {
+	padding-top:40px;
+}
+
+/* ****************Otp End************************************** */
+/* ****************Success, fogotPassword Start************************************** */
+
+
+.SucessWrap {
+	text-align: center;
+}
+.sucessMsgImgWrap img {
+	max-width: 154px;
+	width: 100%;
+}
+.sucessMsgHeading {
+	color: #000B33;
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120%; /* 28.8px */
+	letter-spacing: -0.48px;
+}
+.sucessMsgDesc {
+	color: #000B33;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 130%; /* 20.8px */
+	letter-spacing: -0.32px;
+	padding-top: 23px;
+}
+.sucessMsgContent {
+	padding: 12px 0 0;
+}
+.forgotFrmWrap, .resetPswrdFrmWrap {
+	padding-top: 37px;
+}
+.returnSignInBtnWrap {
+	padding-top: 44px;
+}
+
+.returnSignInBtn{
+	max-width: 300px;
+	margin: auto;
+}
+
+/* ****************Success End************************************** */
+/* ****************Filter Start************************************** */
+.filterPopupBox {
+	max-width: 606px;
+	border-radius: 20px;
+	padding: 57px 59px 39px;
+}
+.filterHeading {
+	color: #000B33;
+	font-family: Inter;
+	font-size: 26px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.filterSearchInputWrap input{
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #D7DBEB;
+    background: url(../images/ic_Search_bl.svg) 95% no-repeat;
+    height: 44px;
+    background-size: 22px;
+    padding: 0 23px;
+
+}
+.filterPopupWrap {
+	position: relative;
+}
+
+.filterPopupFrmWrap {
+	padding-top: 34px;
+}
+.filterLabelcontainer {
+	display: block;
+	position: relative;
+	padding-left: 45px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	color: #000B33;
+	font-family: 'Inter';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.filterLabelcontainer input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	height: 32px;
+	width: 32px;
+	background-color: #fff;
+}
+.filterLabelcontainer input ~ .checkmark {
+	border-radius: 10px;
+	border: 1px solid #D7DBEB;
+	background: #FFF;
+}
+.filterLabelcontainer input:checked ~ .checkmark {
+	background-color: #1C3E77;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.filterLabelcontainer input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.filterLabelcontainer .checkmark:after {
+	left: 11px;
+	top: 5px;
+	width: 6px;
+	height: 13px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.filterSelectBoxListWrap {
+	padding-top: 37px;
+	padding-bottom: 40px;
+	position: relative;
+
+}
+
+.filterSelectBoxListWrap::after {
+	content: "";
+	width: 606px;
+	height: 1px;
+	background: #ccc;
+	position: absolute;
+	left: -60px;
+	bottom: 0;
+}
+.filterListTitle {
+	color: #60667B;
+	font-family: 'Inter';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: 36px;
+}
+.filterSelectBox {
+	margin-bottom: 23px;
+}
+.filterApplyBtnWrap {
+	padding-top: 29px;
+}
+.filterApplyBtn {
+	max-width: 112px;
+	width: 100%;
+	font-family: 'PlusJakartaSans';
+	color: #FFF;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	border-radius: 40px;
+	background: #1C3E77;
+	height: 49px;
+	padding: 0 15px;
+}
+.popupClose a img {
+	max-width: 18px;
+	width: 100%;
+}
+/* ****************Filter End************************************** */
+/* ****************Edit Profile Start************************************** */
+.editProfilePopupBox {
+	border-radius: 20px;
+	max-width: 482px;
+	width: 100%;
+	padding: 50px 40px 40px 40px;
+	margin: auto;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+    max-height: 95%;
+    height: fit-content;
+    overflow-y: auto;
+}
+.editHeading {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding-bottom: 23px;
+}
+.editProfilePopupWrap {
+	position: relative;
+
+}
+
+.saveChangebtnWrap {
+	padding-top: 15px;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.editPflImgWrap img {
+	max-width: 70px;
+	width: 100%;
+	height: 70px;
+}
+
+.profileImgIcon img{
+	max-width: 10px;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.editPflImgWrap {
+	position: relative;
+	width: 100px;
+    z-index: 99;
+}
+.profileImgIcon {
+	position: absolute;
+    bottom: 9px;
+    left: 58px;
+    z-index: 15;
+    background: var(--blue_secondary);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 1px 3px #f4f4f9;
+	cursor: pointer;
+}
+/* ****************Edit Profile End************************************** */
+/* ****************Edit Area Of Intrest start************************************** */
+.editAreaSearchTabWrap, .intrstItemSelectTab {
+	background: #F3F5F8;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    column-gap: 10px;
+}
+.searchTopicBtn , .searchAuthorBtn {
+	background: transparent;
+    padding: 0 14px;
+    height: 44px;
+    border-radius: 7px;
+    max-width: 169px;
+    width: 100%;
+    color: #000B33;
+    text-align: center;
+    font-family: 'PlusJakartaSans';
+    font-size: 20px;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.4px;
+	font-weight: 400;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchTopicBtn.active {
+	background: #FFF;
+	font-weight: 600;
+}
+.arIntItm.deactive {
+	border: 1px solid #C7CCD2;
+	background: #EFF2F5;
+}
+.arIntItm.deactive .arIntTxt {
+	color: #828E9C;
+	text-align: center;
+	font-family: 'PlusJakartaSans';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%; /* 20.4px */
+	letter-spacing: -0.34px;
+}
+.editAreaIntSubheading {
+	color: #A3B0CB;
+	font-family: 'Inter';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.searchTabContentWrap {
+	padding-top: 50px;
+}
+.searchConfirmBtnWrap {
+	padding-top: 30px;
+}
+
+
+/* ****************Edit Area Of Intrest End************************************** */
+.bookLogo img {
+	max-width: 90px;
+	width: 100%;
+}
+
+.bookLogo {
+	padding: 20px 0 50px;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1450px) {
+    /* Login CSS */
+	.lgnBox {
+        padding: 25px 40px 30px;
+        max-width: 385px;
+        border-radius: 20px;
+    }
+    
+    .lgnLogoWrap .logo img {
+        max-width: 270px;
+    }
+
+    .lgnWrap {
+        padding-top: 12px;
+    }
+
+    .lgnTtle {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .lgnDesc {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .lgnFrmWrap {
+        padding-top: 15px;
+    }
+
+    .inpLblGp {
+        margin-bottom: 22px;
+    }
+
+    .gplbl {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .gpInp {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .inpIcon {
+        margin-right: 6px;
+    }
+
+    .inpIcon img {
+        width: 20px;
+    }
+
+    .inpWrap input {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .tglWrap {
+        margin-right: 6px;
+    }
+
+    .tglBtn {
+        width: 30px;
+        height: 16px;
+    }
+
+    .tglSldr:before {
+        height: 12px;
+        width: 12px;
+        left: 2px;
+        bottom: 2px;
+    }
+
+    .kpSgn {
+        font-size: 13px;
+    }
+
+    .fgtPwd {
+        font-size: 13px;
+    }
+
+    .lgnBtnWrap {
+        padding-top: 25px;
+    }
+
+    .lgnBtn {
+        border-radius: 10px;
+        padding: 10px 0 12px;
+        font-size: 16px;
+    }
+
+    .noAccWrap {
+        padding-top: 20px;
+    }
+
+    .noAcc {
+        font-size: 14px;
+    }
+
+    .bookLogo {
+        padding: 20px 0 35px;
+    }
+    .popupHeadingTxt {
+        font-size: 23px;
+        padding-bottom: 22px;
+    }
+
+    /* --client user login-------------- */
+	.clientUserPopupBox {
+		padding: 45px 60px 60px;
+	}
+
+	.signUpBox {
+		padding: 35px 45px 35px;
+	}
+	.signUpHeadingTxt {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* --client user login-------------- */
+	.lgnLogoWrap .logo img {
+		max-width: 250px;
+	}
+	.bookLogo img {
+		max-width: 75px;
+	}
+	.otpSndBtn, .resetPswrdBtn, .returnSignInBtn, .saveChangebtn, .searchConfirmBtn, .deactivateBtn, .subscriptLoginBtn {
+		font-size: 16px;
+		height: 49px;
+	}
+	.clientUserPopupBox {
+		padding: 45px 40px 60px;
+	}
+	.popupHeadingTxt, .sucessMsgHeading {
+		font-size: 22px;
+		padding-top: 16px;
+	}
+	.popupHeadingDescTxt, .sucessMsgDesc {
+		font-size: 14px;
+	}
+	.returnSignInBtnWrap {
+		padding-top: 35px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.clientUserPopupBox {
+		padding: 45px 22px 48px 24px;
+		max-width: 375px;
+		width: 95%;
+	}
+	.clientUserPopupBox .lgnBtnWrap, .clientUserPopupBox .logoWrap { 
+		padding-top: 0px;
+	}
+}
+    

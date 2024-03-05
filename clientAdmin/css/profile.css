@@ -1,0 +1,204 @@
+.profileInfoV1 {
+	display: flex;
+	align-items: center;
+}
+
+.profileInfoV1 figure {
+	max-width: 122px;
+	height: 122px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	display: block;
+	flex-grow: 2;
+	width: 25%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.profileInfoV1 strong {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.profileInfoV1 em {
+	display: block;
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.linkV1 {
+	color: #7A83A4;
+	font-family: 'PlusJakartaSans';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	display: table;
+	padding: 0 0 0 25px;
+	position: relative;
+}
+
+.linkV1 img {
+	max-width: 16px;
+	position: absolute;
+	left: 0;
+	top: 6px;
+}
+
+.profileInfoV1 .proCont {
+	padding: 0 0 0 29px;
+}
+
+.profileInfoV1 .proCont strong {
+	padding: 0 16px 0 0;
+}
+
+.controlTable tr:first-child th:first-child {
+	width: 75%;
+}
+
+.table tbody tr:last-child td {
+	border: none;
+}
+
+.controlTable {
+	margin: 45px 0 0 0;
+}
+
+.content-search-wrap {
+	max-width: inherit;
+	width: 100%;
+}
+
+.content-filter-search {
+	justify-content: space-between;
+	padding: 0 0 24px 0;
+}
+
+.content-filter-search h3 {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 33px;
+}
+
+.logTable tr td:nth-child(2) {
+	width: 88%;
+}
+
+.profileInfoV1 .proCont strong {
+	padding: 0 0 14px 0;
+	display: block;
+}
+
+.profileInfoV1 {
+	width: 100%;
+	max-width: 991px;
+	border-bottom: 1px solid #DEE2E7;
+	padding: 0 0 44px 0;
+}
+
+.profileInfoV1 figure {
+	max-width: 106px;
+	height: 106px;
+}
+
+.profileInfoV1 .proCont {
+	width: 100%;
+	position: relative;
+}
+
+.btnEdit {
+	position: absolute;
+	right: 0;
+}
+
+.personalInfo {
+	padding: 34px 0 37px 0;
+	font-family: 'PlusJakartaSans';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.personalInfo h3 {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px;
+	padding: 0 0 37px 0;
+}
+
+.personalInfo span {
+	color: #8C8FA8;
+	display: block;
+	padding: 0 0 17px 0;
+}
+
+.personalInfo em {
+	color: #000B33;
+	font-style: normal;
+}
+
+.btnV2.v4 {
+	width: inherit;
+	padding: 0 18px;
+}
+
+.changePswd {
+	color: #FFF !important;
+	background: #2654A0 !important;
+	margin: 0 16px 0 0;
+}
+
+.deactivate {
+	border: 1px solid #FA756A !important;
+	color: #FA756A !important;
+}
+
+.personalInfo ul {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 991px;
+	padding: 0 0 70px 0;
+}
+
+.personalInfo li {
+	padding: 0 0 42px 0;
+	width: 50%;
+}
+
+.fileRight span {
+	font-size: 13px;
+	display: block;
+	padding: 14px 0 0 0;
+	color: #5D6185;
+}
+
+.modalHolder {
+	max-width: 424px;
+	z-index: 10;
+}
+
+.fileUploadV1 {
+	padding: 0 0 25px 0;
+}
+
+.btnV2 {
+	background: #1C3E77;
+	width: 100%;
+}

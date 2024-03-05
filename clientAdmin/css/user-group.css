@@ -1,0 +1,16 @@
+.content-search-wrap {
+	max-width: inherit !important;
+	padding: 0 0 34px 0;
+}
+
+.content-filter-search {
+	justify-content: end;
+}
+
+.table.tableClient thead th:nth-child(2) {
+	width: 67%;
+}
+
+.modalHolder {
+	width: 426px;
+}

@@ -1,0 +1,8 @@
+
+.table thead th:nth-child(4) {
+	width: 46%;
+}
+
+.content-filter-search { 
+	justify-content: end;
+}

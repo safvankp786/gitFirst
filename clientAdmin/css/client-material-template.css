@@ -1,0 +1,18 @@
+.content-filter-search {
+	max-width: 100%;
+  padding: 0 0 34px 0;
+	justify-content: space-between;
+}
+
+.content-filter-search h3 {
+	color: #000B33;
+	font-family: 'PlusJakartaSans';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 33px;
+}
+
+.table.tableClient thead th:nth-child(3) {
+	width: 65%;
+}

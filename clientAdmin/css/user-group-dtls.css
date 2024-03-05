@@ -1,0 +1,26 @@
+ 
+.table.tableClient thead th:nth-child(2) {
+	width: 62%;
+}
+
+.materialHolder .content-filter-search {
+	padding: 0;
+	width: 365px;
+}
+
+.material th:nth-child(2) {
+	width: auto !important;
+}
+
+.modalHolder {
+	max-width: 424px;
+	z-index: 10;
+}
+
+.assignCheck li label span:nth-child(1) {
+	width: 76%;
+}
+
+.modifyCheck { 
+	padding-bottom: 35px !important;
+}

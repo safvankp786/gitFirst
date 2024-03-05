@@ -1,0 +1,8 @@
+.pdfInnerActions {
+    position: absolute;
+    top: -18px;
+    right: 53%;
+    max-width: 300px;
+    width: 100%;
+    transform: translate(50%, -50%);
+}

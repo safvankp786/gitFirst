@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>goBookify | Admin - Clients & Contracts</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <!--[if lt IE 10]><script src="js/IEupdate.js" type="text/javascript"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/common.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/admin-login.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/table.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/commonV1.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/commonN1.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/client-dtls.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/create-client.css">
+</head>
+
+<body id="body">
+    <div class="outer-wrapper">
+        <div class="left-container">
+            <div class="left-menu-section">
+                <div class="leftmenu-top">
+                    <a href="/dashboard" class="logo">
+                        <img src="images/adminLogo.svg" alt="goBookify">
+                    </a>
+                </div>
+                <nav class="left-menu">
+                    <ul>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/dashboard_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="active">
+                                <span class="menu-icon">
+                                    <img src="images/clients_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Clients</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/bill_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Subscription</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/admin_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Admin</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/materials_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Materials</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/setting_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Settings</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a>
+                                <span class="menu-icon">
+                                    <img src="images/Topics_Icon.svg" alt="goBookify">
+                                </span>
+                                <span class="menu-txt">Topics</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="topmenu-wrapper">
+                <div class="search-area">
+                    <div class="optSrchWrap">
+                        <div class="optSrchIcon">
+                            <img src="images/ic_Search_bl.svg" alt="icon">
+                        </div>
+                        <div class="optSrchInp">
+                            <input type="text" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="top-nav-buttons">
+                    <li>
+                        <a>
+                            <img src="images/notification-bell_Icon.svg" alt="goBookify" />
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="images/user-profile.svg" alt="goBookify" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-outer-wrapper">
+                <div class="whiteroundbox dashboardTopSec">
+                    <div class="brdCrmbWrap">
+                        <div class="brdCrmbItm">
+                            <div class="brdCrmbTxt">DashBoard</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="brdCrmbItm">
+                            <div class="brdCrmbTxt">Client</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="brdCrmbItm active">
+                            <div class="brdCrmbTxt">Gym International 2023</div>
+                            <div class="brdCrmbArw">
+                                <img src="images/ic_AngleRt_gy.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="content-title-search-wrap">
+                            <div class="title">
+                                <h3>Clients</h3>
+                            </div>
+                            <div class="content-search-wrap">
+                               
+                                <label>Filter By</label>
+                                    <form>
+                                        <div class="content-filter-search">
+                                            <div class="contract-expiry-date">
+                                                <select>
+                                                    <option>Contarct Expiry</option>
+                                                    <option>Contarct Expiry</option>
+                                                </select>
+                                                <div class="contract-date-wrap">
+                                                    <input type="date" placeholder="Date"/>
+                                                    <div class="date_iconWrap">
+                                                        <img src="images/date_icon.svg" alt="Date Icon"/>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="content-search">
+                                                <div class="optSrchInp">
+                                                <input type="text" placeholder="Search">
+                                                </div>
+                                                <div class="optSrchIcon">
+                                                    <img src="images/ic_Search_bl.svg" alt="icon">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </form>
+                                    <div class="buttonWrap">
+                                        <button class="blue-btn createBtn"><span><img src="images/plusIcon.svg" alt="Plus Icon"/></span>Create</button>
+                                    </div>
+                            </div>
+                            
+                        </div> -->
+
+                    <div class="profileHolder">
+                        <figure style="background-image: url(images/clientLginBg.jpg);"></figure>
+                        <div class="nameHolder">
+                            <h2>Gym International 2023 <a class="btnEdit">edit</a></h2>
+                            <span>gyminter@gmail.com</span>
+                            <a class="btnV1 bgRed">Inactive</a>
+                        </div>
+                    </div>
+
+                    <div class="userInfo">
+                        <div class="infoList">
+                            <figure style="background-image: url(images/user.svg); background-color: #ECFCF2;"></figure>
+                            <div class="infoCount">
+                                <span>Number of Users</span>
+                                <strong>237/ 250</strong>
+                            </div>
+                        </div>
+
+                        <div class="infoList">
+                            <figure
+                                style="background-image: url(images/storage.svg); background-color: rgba(243, 201, 107, 0.20);">
+                            </figure>
+                            <div class="infoCount">
+                                <span>Storage Used</span>
+                                <strong>437 / 500 GB</strong>
+                            </div>
+                        </div>
+
+                        <div class="infoList">
+                            <figure
+                                style="background-image: url(images/active.svg); background-color: rgba(224, 244, 255, 1);">
+                            </figure>
+                            <div class="infoCount">
+                                <span>Active Contract</span>
+                                <strong>Gym Inter 2022</strong>
+                            </div>
+                        </div>
+
+                        <div class="infoList">
+                            <figure
+                                style="background-image: url(images/subscription.svg); background-color: rgba(255, 237, 236, 1);">
+                            </figure>
+                            <div class="infoCount">
+                                <span>Public Library Subscription</span>
+                                <strong>Gold</strong>
+                            </div>
+                        </div>
+
+                        <div class="infoList">
+                            <figure
+                                style="background-image: url(images/material.svg); background-color: rgba(221, 246, 255, 1);">
+                            </figure>
+                            <div class="infoCount">
+                                <span>Materials uploaded</span>
+                                <strong>1,576</strong>
+                            </div>
+                        </div>
+
+                        <div class="infoList">
+                            <figure
+                                style="background-image: url(images/admin.svg); background-color: rgba(100, 44, 255, 0.10);;">
+                            </figure>
+                            <div class="infoCount">
+                                <span>Number of Admins</span>
+                                <strong>05/ 10</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="whiteroundbox">
+
+                    <ul class="tabV1">
+                        <li>Contracts</li>
+                        <li class="selected">ADMINS</li>
+                        <li>USERS</li>
+                        <li>USER GROUPs</li>
+                        <li>COLLECTONS</li>
+                        <li>MATERIALS</li>
+                        <li>TOPICS</li>
+                    </ul>
+
+                    <div class="content-search-wrap">
+                        <form>
+                            <div class="content-filter-search">
+
+                                <div class="content-search">
+                                    <div class="optSrchInp">
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                    <div class="optSrchIcon">
+                                        <img src="images/ic_Search_bl.svg" alt="icon">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                        <div class="buttonWrap">
+                            <button class="blue-btn createBtn"><span><img src="images/plusIcon.svg"
+                                        alt="Plus Icon"></span>Add Admin</button>
+                            <button class="blue-btn createBtn"><span><img src="images/iconUpload.svg"
+                                        alt="Plus Icon"></span>Bulk Upload</button>
+                        </div>
+                    </div>
+
+                    <div class="tableWrap">
+                        <div class="table-responsive">
+                            <table class="table tableClient">
+                                <thead>
+                                    <tr>
+                                        <th class="active">Admin Names<span class="sortIcon"><img
+                                                    src="images/sortIcon.svg" /></span></th>
+                                        <th>Email Id<span class="sortIcon"><img src="images/sortIcon.svg" /></span>
+                                        </th>
+                                        <th>Contact Number<span class="sortIcon"><img
+                                                    src="images/sortIcon.svg" /></span></th>
+                                        <th>Status<span class="sortIcon"><img src="images/sortIcon.svg" /></span></th>
+                                        <th>Action<span class="sortIcon"><img src="images/sortIcon.svg" /></span></th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="profileImgWrap">
+                                            <div class="inputCheckV1">
+                                                <input type="checkbox">
+                                                <span></span>
+                                            </div>
+                                            <span class="profImg"><img src="images/profile_img1.svg"
+                                                    alt="Image Profile"></span>
+                                            <span class="clientNme">Abstergo Ltd.</span>
+                                        </td>
+                                        <td>kenzi.lawson@example.com</td>
+
+                                        <td>(319) 555-0115</td>
+
+                                        <td>
+                                            <div class="actionBtnWrap">
+                                                <a href="" class="activeBtn">Active</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="listEdit"></a>
+                                            <a class="listDel"></a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="profileImgWrap">
+                                            <div class="inputCheckV1">
+                                                <input type="checkbox">
+                                                <span></span>
+                                            </div>
+                                            <span class="profImg"><img src="images/profile_img1.svg"
+                                                    alt="Image Profile"></span>
+                                            <span class="clientNme">Abstergo Ltd.</span>
+                                        </td>
+                                        <td>kenzi.lawson@example.com</td>
+
+                                        <td>(319) 555-0115</td>
+
+                                        <td>
+                                            <div class="actionBtnWrap">
+                                                <a href="" class="inactiveBtn">Inactive</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="listEdit"></a>
+                                            <a class="listDel"></a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <!-- Data not found -->
+                            <!-- <div class="listNotFound">
+                            <img src="images/contract.png" alt="No result">
+                            <p>No Contracts Created Yet</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </span>
+                             </div> -->
+                        </div>
+                    </div>
+                    <div class="pgnWrap pgnAdmin">
+                        <div class="countPageItemswrap">
+                            <div class="showCount">
+                                <span>Items Per Page</span>
+                                <select>
+                                    <option>20</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>1</option>
+                                </select>
+                                <span>1-20 of 500 Items</span>
+                            </div>
+                        </div>
+                        <div class="pgnWrap">
+                            <div class="pgnAct">
+                                <div class="pgnActIcon">
+                                    <img src="images/ic_AngleLt_md.svg" alt="icon">
+                                </div>
+                                <!-- <div class="pgnActTxt pgnActTxtPrv">PREVIOUS</div> -->
+                            </div>
+                            <div class="pgnNumWrap">
+                                <div class="pgnNum">1</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum active">2</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum">3</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum">4</div> <!-- Add 'active' class to active page number -->
+                                <div class="pgnNum">5</div> <!-- Add 'active' class to active page number -->
+                            </div>
+                            <div class="pgnAct">
+                                <!-- <div class="pgnActTxt pgnActTxtNxt">NEXT</div> -->
+                                <div class="pgnActIcon">
+                                    <img src="images/ic_AngleRt_md.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-menu-wrapper">
+                <div class="copyrightWrap">
+                    <p>© 2023 gobookify - All right Reserved</p>
+                </div>
+                <div class="bottom-menu-list">
+                    <ul>
+                        <li>Terms & Condition </li>
+                        <li>Policy</li>
+                        <li> Privacy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalHolder">
+        <div class="modalTopSec ">
+            <h2>Add Field</h2>
+            <a class="close"></a>
+        </div>
+
+        <div class="modalCont temp-material">
+            <div class="inputSet">
+                <label>Name</label>
+                <div class="inputHolder">
+                    <input type="text">
+                </div> 
+            </div>
+            <div class="inputSet inputAppend">
+                <label>Type</label>
+                <div class="inputHolder">
+                    <select class=""  required>
+                        <option value="" selected disabled>Text, Number, Date, Rich Text.....</option>
+                        <option value="">Published Year</option>
+                        <option value="">Author</option>
+                        <option value="">Published Year</option>
+                        <option value="">Author</option>    
+                    </select>
+                </div>
+            </div>
+            <div class="inputSet">
+                <label>Mandatory ? </label>
+                <div class="inputHolder">
+                    <select class="">
+                        <option value="">Yes</option>
+                        <option value="">No</option>
+                    </select>
+                </div>
+            </div>
+            <a class="btnV2">Add</a>
+        </div>
+    </div>
+    <div class="overLayer"></div>
+
+</body>
+
+</html>
